@@ -1,0 +1,49 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/side-nav-link",
+	"carbonStyles": [],
+	"awt_component": "side-nav",
+	"title": "Side nav link",
+	"category": "awt-ui-shell",
+	"parent": [
+		"awt/side-nav",
+		"awt/side-nav-section"
+	],
+	"description": "Single nav link inside a side nav.",
+	"textdomain": "awt",
+	"keywords": [
+		"side nav",
+		"link"
+	],
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"className": true,
+		"anchor": false
+	},
+	"attributes": {
+		"text": {
+			"type": "string",
+			"default": "Link"
+		},
+		"href": {
+			"type": "string",
+			"default": "#"
+		},
+		"iconName": {
+			"type": "string",
+			"default": ""
+		},
+		"isCurrent": {
+			"type": "boolean",
+			"default": false
+		},
+		"matchMode": {
+			"type": "string",
+			"default": "exact"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

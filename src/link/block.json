@@ -1,0 +1,69 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/link",
+	"carbonStyles": [
+		"link"
+	],
+	"awt_component": "link",
+	"title": "Link",
+	"category": "awt-content",
+	"description": "A styled text link, on its own or inline, with an optional trailing icon.",
+	"textdomain": "awt",
+	"keywords": [
+		"link",
+		"anchor",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"text": {
+			"type": "string",
+			"default": "Link text",
+			"role": "content"
+		},
+		"href": {
+			"type": "string",
+			"default": "",
+			"role": "content"
+		},
+		"target": {
+			"type": "string",
+			"default": "",
+			"role": "content"
+		},
+		"rel": {
+			"type": "string",
+			"default": "",
+			"role": "content"
+		},
+		"size": {
+			"type": "string",
+			"default": "md"
+		},
+		"inline": {
+			"type": "boolean",
+			"default": false
+		},
+		"visited": {
+			"type": "boolean",
+			"default": false
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"iconName": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

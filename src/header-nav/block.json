@@ -1,0 +1,32 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/header-nav",
+	"carbonStyles": [],
+	"awt_component": "header-nav",
+	"title": "Header navigation",
+	"category": "awt-ui-shell",
+	"description": "A horizontal navigation menu for the header. Add Header navigation item blocks inside it.",
+	"textdomain": "awt",
+	"keywords": [
+		"header",
+		"nav",
+		"navigation",
+		"primary"
+	],
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"className": true,
+		"anchor": false
+	},
+	"attributes": {
+		"ariaLabel": {
+			"type": "string",
+			"default": "Primary"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php"
+}

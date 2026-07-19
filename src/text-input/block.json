@@ -1,0 +1,114 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/text-input",
+	"carbonStyles": [
+		"text-input",
+		"fluid-text-input",
+		"form"
+	],
+	"awt_component": "text-input",
+	"title": "Text input",
+	"category": "awt-forms",
+	"description": "A single-line text field with a label and optional helper, error, and warning text.",
+	"textdomain": "awt",
+	"keywords": [
+		"input",
+		"text",
+		"email",
+		"password",
+		"form",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Label"
+		},
+		"name": {
+			"type": "string",
+			"default": ""
+		},
+		"type": {
+			"type": "string",
+			"default": "text"
+		},
+		"placeholder": {
+			"type": "string",
+			"default": ""
+		},
+		"value": {
+			"type": "string",
+			"default": ""
+		},
+		"helperText": {
+			"type": "string",
+			"default": ""
+		},
+		"invalid": {
+			"type": "boolean",
+			"default": false
+		},
+		"invalidText": {
+			"type": "string",
+			"default": ""
+		},
+		"warn": {
+			"type": "boolean",
+			"default": false
+		},
+		"warnText": {
+			"type": "string",
+			"default": ""
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"readonly": {
+			"type": "boolean",
+			"default": false
+		},
+		"required": {
+			"type": "boolean",
+			"default": false
+		},
+		"size": {
+			"type": "string",
+			"default": "md"
+		},
+		"hideLabel": {
+			"type": "boolean",
+			"default": false
+		},
+		"inline": {
+			"type": "boolean",
+			"default": false
+		},
+		"fluid": {
+			"type": "boolean",
+			"default": false
+		},
+		"maxlength": {
+			"type": "number",
+			"default": 0
+		},
+		"pattern": {
+			"type": "string",
+			"default": ""
+		},
+		"autocomplete": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

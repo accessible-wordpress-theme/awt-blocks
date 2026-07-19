@@ -1,0 +1,62 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/section",
+	"carbonStyles": [],
+	"title": "Section",
+	"category": "awt-section",
+	"description": "A width-limited content wrapper with consistent spacing. It's the outer container for patterns like Hero, Pricing, and Feature grid.",
+	"textdomain": "awt",
+	"keywords": [
+		"section",
+		"container",
+		"layout",
+		"wrapper"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true,
+		"align": [
+			"full",
+			"wide"
+		]
+	},
+	"attributes": {
+		"paddingBlock": {
+			"type": "string",
+			"default": "07"
+		},
+		"paddingInline": {
+			"type": "string",
+			"default": "06"
+		},
+		"maxWidth": {
+			"type": "string",
+			"default": "content"
+		},
+		"customMaxWidth": {
+			"type": "string",
+			"default": ""
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": ""
+		},
+		"themeScope": {
+			"type": "string",
+			"default": "inherit"
+		},
+		"tagName": {
+			"type": "string",
+			"default": "section"
+		},
+		"ariaLabel": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

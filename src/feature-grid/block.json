@@ -1,0 +1,37 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/feature-grid",
+	"carbonStyles": [],
+	"title": "Feature grid",
+	"category": "awt-section",
+	"description": "Responsive grid of feature tiles. Each child block becomes one feature cell.",
+	"textdomain": "awt",
+	"keywords": [
+		"features",
+		"grid",
+		"marketing"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true,
+		"align": [
+			"wide",
+			"full"
+		]
+	},
+	"attributes": {
+		"columns": {
+			"type": "number",
+			"default": 3
+		},
+		"gap": {
+			"type": "string",
+			"default": "06"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

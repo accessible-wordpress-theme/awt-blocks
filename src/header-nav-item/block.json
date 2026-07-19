@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/header-nav-item",
+	"carbonStyles": [],
+	"awt_component": "header-nav",
+	"title": "Header navigation item",
+	"category": "awt-ui-shell",
+	"parent": [
+		"awt/header-nav",
+		"awt/header-menu"
+	],
+	"description": "Single horizontal nav link inside an awt/header-nav.",
+	"textdomain": "awt",
+	"keywords": [
+		"header",
+		"nav",
+		"link"
+	],
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"className": true,
+		"anchor": false
+	},
+	"attributes": {
+		"text": {
+			"type": "string",
+			"default": "Item"
+		},
+		"href": {
+			"type": "string",
+			"default": "#"
+		},
+		"isCurrent": {
+			"type": "boolean",
+			"default": false
+		},
+		"matchMode": {
+			"type": "string",
+			"default": "exact"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

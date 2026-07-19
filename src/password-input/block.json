@@ -1,0 +1,93 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/password-input",
+	"carbonStyles": [
+		"text-input",
+		"form"
+	],
+	"awt_component": "password-input",
+	"title": "Password input",
+	"category": "awt-forms",
+	"description": "A password field with a show/hide button on the right edge.",
+	"textdomain": "awt",
+	"keywords": [
+		"password",
+		"input",
+		"credential",
+		"form",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Password"
+		},
+		"name": {
+			"type": "string",
+			"default": "password"
+		},
+		"placeholder": {
+			"type": "string",
+			"default": ""
+		},
+		"helperText": {
+			"type": "string",
+			"default": ""
+		},
+		"invalid": {
+			"type": "boolean",
+			"default": false
+		},
+		"invalidText": {
+			"type": "string",
+			"default": ""
+		},
+		"warn": {
+			"type": "boolean",
+			"default": false
+		},
+		"warnText": {
+			"type": "string",
+			"default": ""
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"required": {
+			"type": "boolean",
+			"default": false
+		},
+		"size": {
+			"type": "string",
+			"default": "md"
+		},
+		"hideLabel": {
+			"type": "boolean",
+			"default": false
+		},
+		"showLabel": {
+			"type": "string",
+			"default": "Show password"
+		},
+		"hidePasswordLabel": {
+			"type": "string",
+			"default": "Hide password"
+		},
+		"autocomplete": {
+			"type": "string",
+			"default": "current-password"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

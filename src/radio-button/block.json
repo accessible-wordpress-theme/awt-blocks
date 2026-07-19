@@ -1,0 +1,43 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/radio-button",
+	"carbonStyles": [],
+	"awt_component": "radio",
+	"title": "Radio button",
+	"category": "awt-forms",
+	"description": "A single radio button. Place it inside a Radio button group.",
+	"textdomain": "awt",
+	"parent": [
+		"awt/radio-button-group"
+	],
+	"usesContext": [
+		"awt/radioGroupName",
+		"awt/radioGroupRequired"
+	],
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"className": false
+	},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Option"
+		},
+		"value": {
+			"type": "string",
+			"default": ""
+		},
+		"checked": {
+			"type": "boolean",
+			"default": false
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,96 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/text-area",
+	"carbonStyles": [
+		"text-area",
+		"form"
+	],
+	"awt_component": "text-area",
+	"title": "Text area",
+	"category": "awt-forms",
+	"description": "A multi-line text field with a label, helper text, and error, warning, and read-only states.",
+	"textdomain": "awt",
+	"keywords": [
+		"textarea",
+		"multi-line",
+		"input",
+		"form",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Description"
+		},
+		"name": {
+			"type": "string",
+			"default": ""
+		},
+		"placeholder": {
+			"type": "string",
+			"default": ""
+		},
+		"value": {
+			"type": "string",
+			"default": ""
+		},
+		"rows": {
+			"type": "number",
+			"default": 4
+		},
+		"cols": {
+			"type": "number",
+			"default": 0
+		},
+		"helperText": {
+			"type": "string",
+			"default": ""
+		},
+		"invalid": {
+			"type": "boolean",
+			"default": false
+		},
+		"invalidText": {
+			"type": "string",
+			"default": ""
+		},
+		"warn": {
+			"type": "boolean",
+			"default": false
+		},
+		"warnText": {
+			"type": "string",
+			"default": ""
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"readonly": {
+			"type": "boolean",
+			"default": false
+		},
+		"required": {
+			"type": "boolean",
+			"default": false
+		},
+		"maxlength": {
+			"type": "number",
+			"default": 0
+		},
+		"hideLabel": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

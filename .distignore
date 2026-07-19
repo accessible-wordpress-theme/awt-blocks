@@ -1,0 +1,45 @@
+# --- Files excluded from `wp dist-archive` (WP-CLI) packaging ---
+#
+# NOTE: `wp-scripts plugin-zip` (npm run plugin-zip) does NOT read this file.
+# With no `files` field in package.json it packs the Plugin Handbook list only:
+# build/, languages/, admin/, includes/, public/, the root plugin PHP,
+# readme/changelog/license. Runtime files living under src/ or assets/ are
+# mirrored into build/ by scripts/mirror-runtime-into-build.js (last step of
+# `npm run build`) so the zip is self-contained.
+#
+# IMPORTANT: build/ is the plugin runtime and must be in the zip. Because
+# build/ is git-ignored, always regenerate it clean before packaging:
+#   rm -rf build && WP_EXPERIMENTAL_MODULES=true npm run build
+# then run `npm run check:premium` before `npm run plugin-zip`.
+
+/.git
+/.github
+/node_modules
+/src
+/scripts
+/premium-staging
+/.gitignore
+/.distignore
+/.DS_Store
+/webpack.config.js
+/package.json
+/package-lock.json
+*.log
+/.wordpress-org
+/tests
+/docs
+/composer.json
+/composer.lock
+/vendor
+/phpcs.xml.dist
+/playwright.config.js
+/jest.config.js
+/.wp-env.json
+/.wp-env
+/CHANGELOG.md
+/RELEASE_NOTES.md
+/.husky
+/.markdownlint-cli2.jsonc
+/.markdownlintignore
+/eslint.config.js
+/lighthouserc.json

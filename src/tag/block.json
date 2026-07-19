@@ -1,0 +1,58 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/tag",
+	"carbonStyles": [
+		"tag"
+	],
+	"awt_component": "tag",
+	"title": "Tag",
+	"category": "awt-content",
+	"description": "A small colored label for categorizing or filtering. Choose from a range of colors.",
+	"textdomain": "awt",
+	"keywords": [
+		"tag",
+		"chip",
+		"label",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"text": {
+			"type": "string",
+			"default": "Tag"
+		},
+		"type": {
+			"type": "string",
+			"default": "gray"
+		},
+		"size": {
+			"type": "string",
+			"default": "md"
+		},
+		"filter": {
+			"type": "boolean",
+			"default": false
+		},
+		"href": {
+			"type": "string",
+			"default": ""
+		},
+		"target": {
+			"type": "string",
+			"default": ""
+		},
+		"rel": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

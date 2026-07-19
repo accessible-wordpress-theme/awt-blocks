@@ -1,0 +1,58 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/form",
+	"carbonStyles": [
+		"form"
+	],
+	"awt_component": "form",
+	"title": "Form",
+	"category": "awt-forms",
+	"description": "A form container. Add any input blocks inside it — text inputs, checkboxes, radio groups, toggles, and buttons.",
+	"textdomain": "awt",
+	"keywords": [
+		"form",
+		"input",
+		"submit",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"action": {
+			"type": "string",
+			"default": ""
+		},
+		"method": {
+			"type": "string",
+			"default": "post"
+		},
+		"enctype": {
+			"type": "string",
+			"default": ""
+		},
+		"novalidate": {
+			"type": "boolean",
+			"default": false
+		},
+		"ariaLabel": {
+			"type": "string",
+			"default": ""
+		},
+		"legend": {
+			"type": "string",
+			"default": ""
+		},
+		"description": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

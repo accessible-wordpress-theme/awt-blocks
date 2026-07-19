@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/breadcrumb-item",
+	"carbonStyles": [],
+	"awt_component": "breadcrumb",
+	"title": "Breadcrumb item",
+	"category": "awt-navigation",
+	"description": "One step in a breadcrumb trail. It shows as plain text (not a link) when it has no URL or is the current page.",
+	"textdomain": "awt",
+	"parent": [
+		"awt/breadcrumb"
+	],
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"className": false
+	},
+	"attributes": {
+		"text": {
+			"type": "string",
+			"default": "Item"
+		},
+		"href": {
+			"type": "string",
+			"default": ""
+		},
+		"isCurrentPage": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

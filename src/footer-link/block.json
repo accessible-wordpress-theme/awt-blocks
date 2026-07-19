@@ -1,0 +1,40 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/footer-link",
+	"carbonStyles": [],
+	"awt_component": "footer",
+	"title": "Footer link",
+	"category": "awt-ui-shell",
+	"parent": [
+		"awt/footer-section"
+	],
+	"description": "Single link inside a footer section.",
+	"textdomain": "awt",
+	"keywords": [
+		"footer",
+		"link"
+	],
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"className": true,
+		"anchor": false
+	},
+	"attributes": {
+		"text": {
+			"type": "string",
+			"default": "Link"
+		},
+		"href": {
+			"type": "string",
+			"default": "#"
+		},
+		"external": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

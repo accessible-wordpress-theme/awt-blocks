@@ -1,0 +1,47 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/color-scheme-toggle",
+	"carbonStyles": [],
+	"title": "Color scheme toggle",
+	"category": "awt-ui-shell",
+	"description": "A switch that lets visitors choose light or dark mode. Remembers each visitor's choice.",
+	"textdomain": "awt",
+	"keywords": [
+		"dark mode",
+		"light mode",
+		"theme switch",
+		"color scheme"
+	],
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"className": true,
+		"anchor": false
+	},
+	"attributes": {
+		"kind": {
+			"type": "string",
+			"default": "icon-only"
+		},
+		"lightLabel": {
+			"type": "string",
+			"default": "Light mode"
+		},
+		"darkLabel": {
+			"type": "string",
+			"default": "Dark mode"
+		},
+		"autoLabel": {
+			"type": "string",
+			"default": "Use system preference"
+		},
+		"placement": {
+			"type": "string",
+			"default": "header"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php"
+}

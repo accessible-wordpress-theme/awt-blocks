@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/content-switcher-item",
+	"carbonStyles": [],
+	"awt_component": "content-switcher",
+	"title": "Switcher segment",
+	"category": "awt-navigation",
+	"parent": [
+		"awt/content-switcher"
+	],
+	"description": "One button in a content switcher. It pairs by position with the matching switcher panel.",
+	"textdomain": "awt",
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"className": true,
+		"inserter": true
+	},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Segment"
+		},
+		"value": {
+			"type": "string",
+			"default": ""
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,3676 @@
+# Copyright (C) 2026 AWT
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: AWT Blocks 2026.01.0-stage1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/awt-blocks\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-07-19T08:19:32+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: awt\n"
+
+#. Plugin Name of the plugin
+#: awt-blocks.php
+msgid "AWT Blocks"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: awt-blocks.php
+msgid "https://accessiblewordpresstheme.com"
+msgstr ""
+
+#. Description of the plugin
+#: awt-blocks.php
+msgid "58 accessible blocks built on the Carbon Design System, with an accessibility checker inside the editor. Made to pair with the AWT theme."
+msgstr ""
+
+#. Author of the plugin
+#: awt-blocks.php
+msgid "AWT"
+msgstr ""
+
+#: awt-blocks.php:243
+msgid "AWT — UI shell"
+msgstr ""
+
+#: awt-blocks.php:248
+msgid "AWT — Navigation"
+msgstr ""
+
+#: awt-blocks.php:253
+msgid "AWT — Forms"
+msgstr ""
+
+#: awt-blocks.php:258
+msgid "AWT — Content"
+msgstr ""
+
+#: awt-blocks.php:263
+msgid "AWT — Feedback"
+msgstr ""
+
+#: awt-blocks.php:268
+msgid "AWT — Data display"
+msgstr ""
+
+#: awt-blocks.php:273
+msgid "AWT — Sections"
+msgstr ""
+
+#: build/accordion-item/render.php:21
+msgid "Section"
+msgstr ""
+
+#: build/breadcrumb-item/render.php:12
+#: build/header-nav-item/render.php:17
+#: build/breadcrumb-item/index.js:1
+msgid "Item"
+msgstr ""
+
+#: build/breadcrumb/render.php:13
+#: build/breadcrumb/render.php:28
+#: build/breadcrumb/index.js:1
+msgid "Breadcrumb"
+msgstr ""
+
+#: build/button/render.php:24
+#: build/button/index.js:1
+msgid "Button"
+msgstr ""
+
+#: build/checkbox/render.php:14
+#: build/checkbox/index.js:1
+msgid "Checkbox label"
+msgstr ""
+
+#: build/code-snippet/render.php:17
+msgid "Copy"
+msgstr ""
+
+#: build/code-snippet/render.php:18
+msgid "Copied"
+msgstr ""
+
+#: build/color-scheme-toggle/render.php:17
+msgid "Light mode"
+msgstr ""
+
+#: build/color-scheme-toggle/render.php:18
+msgid "Dark mode"
+msgstr ""
+
+#: build/color-scheme-toggle/render.php:19
+msgid "Use system preference"
+msgstr ""
+
+#: build/color-scheme-toggle/render.php:41
+#: build/color-scheme-toggle/index.js:1
+msgid "Color scheme"
+msgstr ""
+
+#: build/content-switcher-item/render.php:21
+#: build/content-switcher-item/index.js:1
+msgid "Segment"
+msgstr ""
+
+#: build/content-switcher/render.php:22
+msgid "View switcher"
+msgstr ""
+
+#. translators: %s: column header text
+#: build/data-table/render.php:115
+#, php-format
+msgid "Sort by %s"
+msgstr ""
+
+#: build/data-table/render.php:165
+#: build/data-table/index.js:1
+msgid "Included"
+msgstr ""
+
+#: build/data-table/render.php:165
+#: build/data-table/index.js:1
+msgid "Not included"
+msgstr ""
+
+#: build/dropdown/render.php:18
+#: build/dropdown/index.js:1
+msgid "Dropdown"
+msgstr ""
+
+#: build/dropdown/render.php:19
+#: build/select/render.php:25
+msgid "Choose…"
+msgstr ""
+
+#: build/footer-link/render.php:14
+#: build/side-nav-link/render.php:19
+#: build/button/index.js:1
+#: build/link/index.js:1
+#: build/tag/index.js:1
+msgid "Link"
+msgstr ""
+
+#: build/header-menu/render.php:31
+#: build/menu-button/render.php:18
+#: build/header-menu/index.js:1
+msgid "Menu"
+msgstr ""
+
+#: build/header-nav/render.php:45
+#: build/pricing-tile/index.js:1
+msgid "Primary"
+msgstr ""
+
+#: build/header-nav/render.php:55
+msgid "Open menu"
+msgstr ""
+
+#: build/header-nav/render.php:56
+msgid "Close menu"
+msgstr ""
+
+#: build/link/render.php:15
+#: build/link/index.js:1
+msgid "Link text"
+msgstr ""
+
+#: build/modal-opener/render.php:12
+msgid "Open modal"
+msgstr ""
+
+#: build/modal/render.php:26
+msgid "Continue"
+msgstr ""
+
+#: build/modal/render.php:27
+msgid "Cancel"
+msgstr ""
+
+#: build/modal/render.php:121
+msgid "Close"
+msgstr ""
+
+#: build/notification/render.php:18
+#: build/notification/index.js:1
+msgid "Notification"
+msgstr ""
+
+#: build/notification/render.php:71
+#: build/notification/index.js:1
+msgid "Close notification"
+msgstr ""
+
+#: build/pagination/render.php:23
+#: build/pagination/index.js:1
+msgid "Pagination"
+msgstr ""
+
+#: build/pagination/render.php:124
+#: build/pagination/render.php:131
+#: build/pagination/index.js:1
+msgid "Previous page"
+msgstr ""
+
+#: build/pagination/render.php:144
+#: build/pagination/render.php:151
+#: build/pagination/index.js:1
+msgid "Next page"
+msgstr ""
+
+#. translators: %d — the page number of the current page.
+#: build/pagination/render.php:173
+#, php-format
+msgid "Page %d, current page"
+msgstr ""
+
+#. translators: %d — the page number the link navigates to.
+#: build/pagination/render.php:183
+#, php-format
+msgid "Page %d"
+msgstr ""
+
+#: build/password-input/render.php:19
+msgid "Password"
+msgstr ""
+
+#: build/password-input/render.php:31
+msgid "Show password"
+msgstr ""
+
+#: build/password-input/render.php:32
+msgid "Hide password"
+msgstr ""
+
+#: build/radio-button/render.php:15
+#: build/radio-button/index.js:1
+msgid "Option"
+msgstr ""
+
+#: build/select/render.php:16
+#: build/select/index.js:1
+msgid "Select"
+msgstr ""
+
+#: build/side-nav/render.php:16
+msgid "Side navigation"
+msgstr ""
+
+#: build/skip-link/render.php:34
+#: build/skip-link/index.js:1
+msgid "Skip to main content"
+msgstr ""
+
+#: build/tab/render.php:16
+#: build/tab/index.js:1
+msgid "Tab"
+msgstr ""
+
+#: build/tabs/render.php:27
+#: build/tabs/index.js:1
+msgid "Tabs"
+msgstr ""
+
+#: build/tabs/render.php:101
+msgid "Scroll tabs left"
+msgstr ""
+
+#: build/tabs/render.php:104
+msgid "Scroll tabs right"
+msgstr ""
+
+#: build/tag/render.php:16
+#: build/tag/index.js:1
+msgid "Tag"
+msgstr ""
+
+#: build/tag/render.php:59
+#: build/tag/index.js:1
+msgid "Dismiss"
+msgstr ""
+
+#: build/text-area/render.php:26
+#: build/form/index.js:1
+#: build/toggletip/index.js:1
+#: build/tooltip/index.js:1
+msgid "Description"
+msgstr ""
+
+#: build/text-input/render.php:33
+#: build/dropdown/index.js:1
+#: build/menu-button/index.js:1
+#: build/password-input/index.js:1
+#: build/select/index.js:1
+#: build/text-area/index.js:1
+#: build/text-input/index.js:1
+msgid "Label"
+msgstr ""
+
+#: build/tile/render.php:28
+msgid "Expandable tile"
+msgstr ""
+
+#: build/toggle/render.php:26
+#: build/toggle/index.js:1
+msgid "Toggle label"
+msgstr ""
+
+#: build/toggle/render.php:32
+msgid "Off"
+msgstr ""
+
+#: build/toggle/render.php:33
+msgid "On"
+msgstr ""
+
+#: build/toggletip/render.php:21
+msgid "More information"
+msgstr ""
+
+#: assets/global-block-controls.js:321
+#: build/assets/global-block-controls.js:321
+msgid "None (theme default)"
+msgstr ""
+
+#: assets/global-block-controls.js:368
+#: build/assets/global-block-controls.js:368
+#: build/section/index.js:1
+msgid "Spacing"
+msgstr ""
+
+#: assets/global-block-controls.js:372
+#: build/assets/global-block-controls.js:372
+msgid "Spacing (bottom margin)"
+msgstr ""
+
+#: assets/global-block-controls.js:373
+#: build/assets/global-block-controls.js:373
+msgid "Carbon spacing token applied as this block’s bottom margin."
+msgstr ""
+
+#: assets/global-block-controls.js:397
+#: build/assets/global-block-controls.js:397
+msgid "Carbon spacing"
+msgstr ""
+
+#: build/accordion-item/index.js:1
+msgid "Accordion item"
+msgstr ""
+
+#: build/accordion-item/index.js:1
+#: build/faq-item/index.js:1
+#: build/tile/index.js:1
+#: build/tooltip/index.js:1
+msgid "Open by default"
+msgstr ""
+
+#: build/accordion-item/index.js:1
+#: build/button/index.js:1
+#: build/checkbox/index.js:1
+#: build/content-switcher-item/index.js:1
+#: build/dropdown/index.js:1
+#: build/link/index.js:1
+#: build/menu-button/index.js:1
+#: build/password-input/index.js:1
+#: build/radio-button/index.js:1
+#: build/select/index.js:1
+#: build/tab/index.js:1
+#: build/text-area/index.js:1
+#: build/text-input/index.js:1
+#: build/toggle/index.js:1
+msgid "Disabled"
+msgstr ""
+
+#: build/accordion-item/index.js:1
+msgid "Section title"
+msgstr ""
+
+#: build/accordion/index.js:1
+msgid "Accordion"
+msgstr ""
+
+#: build/accordion/index.js:1
+msgid "Chevron alignment"
+msgstr ""
+
+#: build/accordion/index.js:1
+#: build/inline-set/index.js:1
+msgid "End"
+msgstr ""
+
+#: build/accordion/index.js:1
+#: build/inline-set/index.js:1
+#: build/stat/index.js:1
+#: build/testimonial/index.js:1
+msgid "Start"
+msgstr ""
+
+#: build/accordion/index.js:1
+#: build/button/index.js:1
+#: build/content-switcher/index.js:1
+#: build/data-table/index.js:1
+#: build/dropdown/index.js:1
+#: build/icon/index.js:1
+#: build/link/index.js:1
+#: build/menu-button/index.js:1
+#: build/modal-opener/index.js:1
+#: build/modal/index.js:1
+#: build/password-input/index.js:1
+#: build/select/index.js:1
+#: build/tag/index.js:1
+#: build/text-input/index.js:1
+#: build/toggle/index.js:1
+msgid "Size"
+msgstr ""
+
+#: build/accordion/index.js:1
+msgid "Single-open mode"
+msgstr ""
+
+#: build/accordion/index.js:1
+msgid "Only one item can be open at a time. Opening one closes the others."
+msgstr ""
+
+#: build/breadcrumb-item/index.js:1
+msgid "Breadcrumb item"
+msgstr ""
+
+#: build/breadcrumb-item/index.js:1
+#: build/link/index.js:1
+msgid "URL"
+msgstr ""
+
+#: build/breadcrumb-item/index.js:1
+msgid "Current page"
+msgstr ""
+
+#: build/breadcrumb-item/index.js:1
+msgid "Sets aria-current=\"page\" and renders as plain text."
+msgstr ""
+
+#: build/breadcrumb/index.js:1
+#: build/content-switcher/index.js:1
+#: build/form/index.js:1
+#: build/header-menu/index.js:1
+#: build/header-nav/index.js:1
+#: build/index.js:4
+#: build/pagination/index.js:1
+#: build/section/index.js:1
+#: build/side-nav/index.js:1
+#: build/tabs/index.js:1
+msgid "Accessible name (aria-label)"
+msgstr ""
+
+#: build/breadcrumb/index.js:1
+msgid "No trailing slash"
+msgstr ""
+
+#: build/button/index.js:1
+#: build/footer-section/index.js:1
+#: build/header-action/index.js:1
+#: build/icon/index.js:1
+#: build/link/index.js:1
+#: build/side-nav-link/index.js:1
+#: build/side-nav-section/index.js:1
+msgid "Icon"
+msgstr ""
+
+#: build/button/index.js:1
+#: build/footer-section/index.js:1
+#: build/header-action/index.js:1
+#: build/icon/index.js:1
+#: build/link/index.js:1
+#: build/side-nav-link/index.js:1
+#: build/side-nav-section/index.js:1
+msgid "Change icon (current:"
+msgstr ""
+
+#: build/button/index.js:1
+#: build/footer-section/index.js:1
+#: build/header-action/index.js:1
+#: build/icon/index.js:1
+#: build/link/index.js:1
+#: build/side-nav-link/index.js:1
+#: build/side-nav-section/index.js:1
+msgid "Choose icon"
+msgstr ""
+
+#: build/button/index.js:1
+#: build/footer-section/index.js:1
+#: build/header-action/index.js:1
+#: build/icon/index.js:1
+#: build/link/index.js:1
+#: build/side-nav-link/index.js:1
+#: build/side-nav-section/index.js:1
+msgid "Choose an icon…"
+msgstr ""
+
+#: build/button/index.js:1
+#: build/footer-section/index.js:1
+#: build/header-action/index.js:1
+#: build/icon/index.js:1
+#: build/link/index.js:1
+#: build/side-nav-link/index.js:1
+#: build/side-nav-section/index.js:1
+msgid "Clear"
+msgstr ""
+
+#: build/button/index.js:1
+#: build/footer-section/index.js:1
+#: build/header-action/index.js:1
+#: build/icon/index.js:1
+#: build/link/index.js:1
+#: build/side-nav-link/index.js:1
+#: build/side-nav-section/index.js:1
+msgid "Filter icons"
+msgstr ""
+
+#: build/button/index.js:1
+#: build/footer-section/index.js:1
+#: build/header-action/index.js:1
+#: build/icon/index.js:1
+#: build/link/index.js:1
+#: build/side-nav-link/index.js:1
+#: build/side-nav-section/index.js:1
+msgid "Search by name, alias, or category…"
+msgstr ""
+
+#: build/button/index.js:1
+#: build/footer-section/index.js:1
+#: build/header-action/index.js:1
+#: build/icon/index.js:1
+#: build/link/index.js:1
+#: build/side-nav-link/index.js:1
+#: build/side-nav-section/index.js:1
+msgid "Loading icons…"
+msgstr ""
+
+#: build/button/index.js:1
+#: build/footer-section/index.js:1
+#: build/header-action/index.js:1
+#: build/icon/index.js:1
+#: build/link/index.js:1
+#: build/side-nav-link/index.js:1
+#: build/side-nav-section/index.js:1
+msgid "Icon results"
+msgstr ""
+
+#: build/button/index.js:1
+#: build/footer-section/index.js:1
+#: build/header-action/index.js:1
+#: build/icon/index.js:1
+#: build/link/index.js:1
+#: build/side-nav-link/index.js:1
+#: build/side-nav-section/index.js:1
+msgid "Showing first"
+msgstr ""
+
+#: build/button/index.js:1
+#: build/footer-section/index.js:1
+#: build/header-action/index.js:1
+#: build/icon/index.js:1
+#: build/link/index.js:1
+#: build/side-nav-link/index.js:1
+#: build/side-nav-section/index.js:1
+msgid "icons"
+msgstr ""
+
+#: build/button/index.js:1
+#: build/footer-section/index.js:1
+#: build/header-action/index.js:1
+#: build/icon/index.js:1
+#: build/link/index.js:1
+#: build/side-nav-link/index.js:1
+#: build/side-nav-section/index.js:1
+msgid "Manifest unavailable. Run `npm run build:icons` and reload."
+msgstr ""
+
+#: build/button/index.js:1
+#: build/data-table/index.js:1
+#: build/faq-item/index.js:1
+#: build/list/index.js:1
+#: build/modal/index.js:1
+msgid "AWT Premium"
+msgstr ""
+
+#: build/button/index.js:1
+#: build/data-table/index.js:1
+#: build/faq-item/index.js:1
+#: build/list/index.js:1
+#: build/modal/index.js:1
+msgid "Learn more about AWT Premium"
+msgstr ""
+
+#: build/button/index.js:1
+#: build/color-scheme-toggle/index.js:1
+#: build/header-action/index.js:1
+#: build/menu-button/index.js:1
+#: build/modal-opener/index.js:1
+#: build/notification/index.js:1
+#: build/testimonial/index.js:1
+msgid "Kind"
+msgstr ""
+
+#: build/button/index.js:1
+msgid "Expressive type variant"
+msgstr ""
+
+#: build/button/index.js:1
+#: build/list/index.js:1
+msgid "Expressive type set is designed for editorial, marketing, and dynamic web experiences. It uses larger base sizes and fluid headings."
+msgstr ""
+
+#: build/button/index.js:1
+msgid "Submit the form"
+msgstr ""
+
+#: build/button/index.js:1
+msgid "Not available while a URL is set — a URL turns the button into a link."
+msgstr ""
+
+#: build/button/index.js:1
+msgid "Turn on for the button that sends a form. Place the button inside a Form block."
+msgstr ""
+
+#: build/button/index.js:1
+msgid "URL (renders <a> when set)"
+msgstr ""
+
+#: build/button/index.js:1
+#: build/link/index.js:1
+#: build/modal/index.js:1
+#: build/tag/index.js:1
+msgid "Target"
+msgstr ""
+
+#: build/button/index.js:1
+#: build/modal/index.js:1
+#: build/tag/index.js:1
+msgid "rel (auto: \"noopener noreferrer\" for new tab)"
+msgstr ""
+
+#: build/button/index.js:1
+msgid "Search the Carbon icon library. Leave empty for no icon."
+msgstr ""
+
+#: build/button/index.js:1
+msgid "Icon position"
+msgstr ""
+
+#: build/button/index.js:1
+msgid "On click"
+msgstr ""
+
+#: build/button/index.js:1
+#: build/modal/index.js:1
+msgid "Run a JavaScript function"
+msgstr ""
+
+#: build/button/index.js:1
+#: build/modal/index.js:1
+msgid "Call a JavaScript function by name when clicked."
+msgstr ""
+
+#: build/button/index.js:1
+#: build/modal-opener/index.js:1
+msgid "Button label"
+msgstr ""
+
+#: build/checkbox/index.js:1
+msgid "Checkbox"
+msgstr ""
+
+#: build/checkbox/index.js:1
+#: build/dropdown/index.js:1
+#: build/password-input/index.js:1
+#: build/select/index.js:1
+#: build/text-area/index.js:1
+#: build/text-input/index.js:1
+#: build/toggle/index.js:1
+msgid "Name"
+msgstr ""
+
+#: build/checkbox/index.js:1
+#: build/menu-button/index.js:1
+#: build/radio-button/index.js:1
+msgid "Value"
+msgstr ""
+
+#: build/checkbox/index.js:1
+#: build/radio-button/index.js:1
+msgid "Checked by default"
+msgstr ""
+
+#: build/checkbox/index.js:1
+msgid "Indeterminate"
+msgstr ""
+
+#: build/checkbox/index.js:1
+#: build/password-input/index.js:1
+#: build/radio-button-group/index.js:1
+#: build/select/index.js:1
+#: build/text-area/index.js:1
+#: build/text-input/index.js:1
+msgid "Required"
+msgstr ""
+
+#: build/checkbox/index.js:1
+#: build/dropdown/index.js:1
+#: build/password-input/index.js:1
+#: build/radio-button-group/index.js:1
+#: build/select/index.js:1
+#: build/text-area/index.js:1
+#: build/text-input/index.js:1
+msgid "Help & validation"
+msgstr ""
+
+#: build/checkbox/index.js:1
+#: build/dropdown/index.js:1
+#: build/password-input/index.js:1
+#: build/radio-button-group/index.js:1
+#: build/select/index.js:1
+#: build/text-area/index.js:1
+#: build/text-input/index.js:1
+msgid "Helper text"
+msgstr ""
+
+#: build/checkbox/index.js:1
+#: build/radio-button-group/index.js:1
+msgid "Invalid state"
+msgstr ""
+
+#: build/checkbox/index.js:1
+#: build/dropdown/index.js:1
+#: build/password-input/index.js:1
+#: build/radio-button-group/index.js:1
+#: build/select/index.js:1
+#: build/text-area/index.js:1
+#: build/text-input/index.js:1
+msgid "Invalid message"
+msgstr ""
+
+#: build/code-snippet/index.js:1
+msgid "Code snippet"
+msgstr ""
+
+#: build/code-snippet/index.js:1
+#: build/notification/index.js:1
+#: build/tile/index.js:1
+msgid "Variant"
+msgstr ""
+
+#: build/code-snippet/index.js:1
+msgid "Language (e.g., js, php — used as data-language only)"
+msgstr ""
+
+#: build/code-snippet/index.js:1
+msgid "Code"
+msgstr ""
+
+#: build/code-snippet/index.js:1
+msgid "Hide copy button"
+msgstr ""
+
+#: build/code-snippet/index.js:1
+msgid "Copy button label"
+msgstr ""
+
+#: build/code-snippet/index.js:1
+msgid "Copied-state label"
+msgstr ""
+
+#: build/color-scheme-toggle/index.js:1
+#: build/header-action/index.js:1
+msgid "Icon only"
+msgstr ""
+
+#: build/color-scheme-toggle/index.js:1
+#: build/header-action/index.js:1
+msgid "Icon with label"
+msgstr ""
+
+#: build/color-scheme-toggle/index.js:1
+msgid "Segmented (Light / Auto / Dark)"
+msgstr ""
+
+#: build/color-scheme-toggle/index.js:1
+msgid "Color scheme toggle"
+msgstr ""
+
+#: build/color-scheme-toggle/index.js:1
+msgid "Light-state label"
+msgstr ""
+
+#: build/color-scheme-toggle/index.js:1
+msgid "Auto-state label"
+msgstr ""
+
+#: build/color-scheme-toggle/index.js:1
+msgid "Dark-state label"
+msgstr ""
+
+#: build/color-scheme-toggle/index.js:1
+msgid "Only renders on the front-end when allowVisitorOverride is enabled in theme settings."
+msgstr ""
+
+#: build/content-switcher-item/index.js:1
+msgid "Value (optional)"
+msgstr ""
+
+#: build/content-switcher-item/index.js:1
+msgid "Sent in the awt:content-switcher-change event for app/JS consumers. Not needed for plain content switching."
+msgstr ""
+
+#: build/content-switcher-item/index.js:1
+msgid "Segment label"
+msgstr ""
+
+#: build/content-switcher/index.js:1
+msgid "Content switcher"
+msgstr ""
+
+#: build/data-table/index.js:1
+msgid "Text"
+msgstr ""
+
+#: build/data-table/index.js:1
+#: build/list/index.js:1
+msgid "HTML"
+msgstr ""
+
+#: build/data-table/index.js:1
+#: build/list/index.js:1
+msgid "Markdown"
+msgstr ""
+
+#: build/data-table/index.js:1
+msgid "Data table"
+msgstr ""
+
+#: build/data-table/index.js:1
+msgid "Caption (accessible)"
+msgstr ""
+
+#: build/data-table/index.js:1
+msgid "Zebra striping"
+msgstr ""
+
+#: build/data-table/index.js:1
+msgid "Static width"
+msgstr ""
+
+#: build/data-table/index.js:1
+msgid "Sticky header"
+msgstr ""
+
+#: build/data-table/index.js:1
+msgid "Sortable columns"
+msgstr ""
+
+#: build/data-table/index.js:1
+msgid "Default sort column"
+msgstr ""
+
+#: build/data-table/index.js:1
+#: build/side-nav/index.js:1
+#: build/testimonial/index.js:1
+msgid "None"
+msgstr ""
+
+#: build/data-table/index.js:1
+msgid "Default sort direction"
+msgstr ""
+
+#: build/data-table/index.js:1
+#: build/list/index.js:1
+msgid "Data"
+msgstr ""
+
+#: build/data-table/index.js:1
+#: build/list/index.js:1
+msgid "Data source"
+msgstr ""
+
+#: build/data-table/index.js:1
+msgid "Headers (one per line: key|label)"
+msgstr ""
+
+#: build/data-table/index.js:1
+msgid "Rows (one per line, pipe-separated, in header order)"
+msgstr ""
+
+#: build/data-table/index.js:1
+#: build/list/index.js:1
+msgid "Paste content"
+msgstr ""
+
+#: build/data-table/index.js:1
+msgid "Paste an HTML <table>. Its header row and body rows become the table data."
+msgstr ""
+
+#: build/data-table/index.js:1
+msgid "Paste a Markdown table — a header row, a |---|---| separator row, then data rows."
+msgstr ""
+
+#: build/data-table/index.js:1
+msgid "Replace the current table data with the pasted content?"
+msgstr ""
+
+#: build/data-table/index.js:1
+msgid "No <table> found in the pasted HTML."
+msgstr ""
+
+#: build/data-table/index.js:1
+msgid "That doesn’t look like a Markdown table. Include a header row and a |---|---| separator row."
+msgstr ""
+
+#: build/data-table/index.js:1
+msgid "Generate table"
+msgstr ""
+
+#: build/data-table/index.js:1
+#: build/list/index.js:1
+msgid "More data sources"
+msgstr ""
+
+#: build/data-table/index.js:1
+msgid "Populate this table from JSON, a REST API, or a WP_Query — available in AWT Premium."
+msgstr ""
+
+#: build/dropdown/index.js:1
+#: build/password-input/index.js:1
+#: build/text-area/index.js:1
+#: build/text-input/index.js:1
+msgid "Placeholder"
+msgstr ""
+
+#: build/dropdown/index.js:1
+#: build/select/index.js:1
+msgid "Options (one per line: value|label)"
+msgstr ""
+
+#: build/dropdown/index.js:1
+#: build/password-input/index.js:1
+#: build/select/index.js:1
+#: build/text-area/index.js:1
+#: build/text-input/index.js:1
+msgid "Invalid"
+msgstr ""
+
+#: build/faq-item/index.js:1
+msgid "FAQ question"
+msgstr ""
+
+#: build/faq-item/index.js:1
+msgid "Question heading level"
+msgstr ""
+
+#: build/faq-item/index.js:1
+msgid "The semantic heading level that wraps the question. Default H3 matches Carbon's accordion convention; override based on the surrounding page hierarchy."
+msgstr ""
+
+#: build/faq-item/index.js:1
+#: build/stat/index.js:1
+msgid "Heading 2"
+msgstr ""
+
+#: build/faq-item/index.js:1
+msgid "Heading 3 (default)"
+msgstr ""
+
+#: build/faq-item/index.js:1
+#: build/stat/index.js:1
+msgid "Heading 4"
+msgstr ""
+
+#: build/faq-item/index.js:1
+#: build/stat/index.js:1
+msgid "Heading 5"
+msgstr ""
+
+#: build/faq-item/index.js:1
+#: build/stat/index.js:1
+msgid "Heading 6"
+msgstr ""
+
+#: build/faq-item/index.js:1
+msgid "FAQ rich results"
+msgstr ""
+
+#: build/faq-item/index.js:1
+msgid "Output FAQ structured data (the JSON Google reads to show this Q&A directly in search results). Available in AWT Premium."
+msgstr ""
+
+#: build/faq-item/index.js:1
+msgid "Question?"
+msgstr ""
+
+#: build/feature-grid/index.js:1
+msgid "Feature grid"
+msgstr ""
+
+#: build/feature-grid/index.js:1
+msgid "Columns"
+msgstr ""
+
+#: build/feature-grid/index.js:1
+msgid "Gap (Carbon spacing scale)"
+msgstr ""
+
+#: build/footer-link/index.js:1
+msgid "Footer link"
+msgstr ""
+
+#: build/footer-link/index.js:1
+#: build/header-action/index.js:1
+#: build/header-nav-item/index.js:1
+#: build/side-nav-link/index.js:1
+msgid "Link target (href)"
+msgstr ""
+
+#: build/footer-link/index.js:1
+msgid "External link"
+msgstr ""
+
+#: build/footer-link/index.js:1
+msgid "Adds target=\"_blank\" rel=\"noopener noreferrer\" and an external-link icon."
+msgstr ""
+
+#: build/footer-link/index.js:1
+#: build/side-nav-link/index.js:1
+msgid "Link label"
+msgstr ""
+
+#: build/footer-section/index.js:1
+msgid "Footer section"
+msgstr ""
+
+#: build/footer-section/index.js:1
+msgid "Icon (optional)"
+msgstr ""
+
+#: build/footer-section/index.js:1
+#: build/side-nav-section/index.js:1
+msgid "Section heading (optional)"
+msgstr ""
+
+#: build/form/index.js:1
+msgid "Form"
+msgstr ""
+
+#: build/form/index.js:1
+msgid "Action URL"
+msgstr ""
+
+#: build/form/index.js:1
+msgid "Method"
+msgstr ""
+
+#: build/form/index.js:1
+msgid "Enctype"
+msgstr ""
+
+#: build/form/index.js:1
+msgid "Typically multipart/form-data for file uploads."
+msgstr ""
+
+#: build/form/index.js:1
+msgid "Skip browser validation (novalidate)"
+msgstr ""
+
+#: build/form/index.js:1
+msgid "Header"
+msgstr ""
+
+#: build/form/index.js:1
+#: build/radio-button-group/index.js:1
+msgid "Legend"
+msgstr ""
+
+#: build/form/index.js:1
+msgid "Renders as <h2> at the top of the form."
+msgstr ""
+
+#: build/header-action/index.js:1
+msgid "Header action"
+msgstr ""
+
+#: build/header-action/index.js:1
+#: build/icon/index.js:1
+msgid "Accessible name"
+msgstr ""
+
+#: build/header-action/index.js:1
+msgid "Required. Spoken by screen readers; visible only when kind is \"Icon with label\"."
+msgstr ""
+
+#: build/header-action/index.js:1
+msgid "If set, renders as <a>. Leave blank for a button."
+msgstr ""
+
+#: build/header-action/index.js:1
+msgid "Panel ID"
+msgstr ""
+
+#: build/header-action/index.js:1
+msgid "If set, clicking the button toggles a matching awt/panel / awt/modal / awt/side-nav."
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "Use site default (from AWT Settings)"
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "Text only"
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "Text with prefix"
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "Logo only"
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "Logo with text"
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "Logo with text and prefix"
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "Writing good alt text for a header logo:"
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "• Include the brand name (it's what visitors expect to hear)"
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "• Mention that clicking navigates home when relevant (e.g., \"Acme logo; back to home\")"
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "• Don't include the word \"image\" or \"logo\" alone — screen readers already announce that"
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "• Keep it concise — under ~100 characters"
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "Header brand"
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "Brand mode"
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "Site title override"
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "Leave blank to use the WordPress site title."
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "Prefix (e.g., \"IBM\")"
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "Replace logo"
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "Upload logo"
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "Logo alt text"
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "Remove logo"
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "Link target"
+msgstr ""
+
+#: build/header-brand/index.js:1
+msgid "(Site title)"
+msgstr ""
+
+#: build/header-global/index.js:1
+msgid "Header global actions"
+msgstr ""
+
+#: build/header-global/index.js:1
+msgid "Region label (aria-label, optional)"
+msgstr ""
+
+#: build/header-menu/index.js:1
+msgid "Header menu"
+msgstr ""
+
+#: build/header-menu/index.js:1
+msgid "Names the submenu for screen readers. Defaults to the menu label."
+msgstr ""
+
+#: build/header-nav-item/index.js:1
+msgid "Nav item"
+msgstr ""
+
+#: build/header-nav-item/index.js:1
+#: build/side-nav-link/index.js:1
+msgid "Current-URL match mode"
+msgstr ""
+
+#: build/header-nav-item/index.js:1
+msgid "Exact: only this URL highlights. Prefix: this URL and any descendant route highlight (useful for section roots)."
+msgstr ""
+
+#: build/header-nav-item/index.js:1
+#: build/side-nav-link/index.js:1
+msgid "Exact"
+msgstr ""
+
+#: build/header-nav-item/index.js:1
+#: build/side-nav-link/index.js:1
+msgid "Prefix"
+msgstr ""
+
+#: build/header-nav-item/index.js:1
+#: build/side-nav-link/index.js:1
+msgid "Force aria-current=\"page\""
+msgstr ""
+
+#: build/header-nav-item/index.js:1
+msgid "Overrides automatic URL matching for edge cases."
+msgstr ""
+
+#: build/header-nav-item/index.js:1
+msgid "Nav item label"
+msgstr ""
+
+#: build/header-nav/index.js:1
+msgid "Header navigation"
+msgstr ""
+
+#: build/hero/index.js:1
+msgid "Original proportions"
+msgstr ""
+
+#: build/hero/index.js:1
+msgid "Square (1:1)"
+msgstr ""
+
+#: build/hero/index.js:1
+msgid "Landscape (4:3)"
+msgstr ""
+
+#: build/hero/index.js:1
+msgid "Landscape (3:2)"
+msgstr ""
+
+#: build/hero/index.js:1
+msgid "Widescreen (16:9)"
+msgstr ""
+
+#: build/hero/index.js:1
+msgid "Portrait (3:4)"
+msgstr ""
+
+#: build/hero/index.js:1
+msgid "Portrait (4:5)"
+msgstr ""
+
+#: build/hero/index.js:1
+msgid "Equal to text"
+msgstr ""
+
+#: build/hero/index.js:1
+msgid "Narrower than text"
+msgstr ""
+
+#: build/hero/index.js:1
+msgid "Wider than text"
+msgstr ""
+
+#: build/hero/index.js:1
+msgid "Hero"
+msgstr ""
+
+#: build/hero/index.js:1
+#: build/section/index.js:1
+msgid "Layout"
+msgstr ""
+
+#: build/hero/index.js:1
+msgid "Text only (centered)"
+msgstr ""
+
+#: build/hero/index.js:1
+msgid "Text + image on right"
+msgstr ""
+
+#: build/hero/index.js:1
+msgid "Replace image"
+msgstr ""
+
+#: build/hero/index.js:1
+msgid "Upload image"
+msgstr ""
+
+#: build/hero/index.js:1
+msgid "Image alt text"
+msgstr ""
+
+#: build/hero/index.js:1
+msgid "Image shape"
+msgstr ""
+
+#: build/hero/index.js:1
+msgid "Crop the image to a fixed shape. \"Original proportions\" keeps the image uncropped."
+msgstr ""
+
+#: build/hero/index.js:1
+msgid "Image column width"
+msgstr ""
+
+#: build/hero/index.js:1
+msgid "How much horizontal space the image gets next to the text. Applies on wider screens; the image stacks below the text on small screens."
+msgstr ""
+
+#: build/icon/index.js:1
+msgid "Inherit from text"
+msgstr ""
+
+#: build/icon/index.js:1
+msgid "Carbon icon"
+msgstr ""
+
+#: build/icon/index.js:1
+msgid "Search by name or alias; click an icon to select."
+msgstr ""
+
+#: build/icon/index.js:1
+#: build/tag/index.js:1
+msgid "Color"
+msgstr ""
+
+#: build/icon/index.js:1
+msgid "Align with text baseline"
+msgstr ""
+
+#: build/icon/index.js:1
+msgid "Vertically centers the icon against text on the same line. Only has a visible effect when the icon shares a line with other inline content (e.g. several icons in a row)."
+msgstr ""
+
+#: build/icon/index.js:1
+msgid "Decorative"
+msgstr ""
+
+#: build/icon/index.js:1
+msgid "Decorative icons are hidden from screen readers. Uncheck to provide an accessible name."
+msgstr ""
+
+#: build/icon/index.js:1
+msgid "Informative icons must carry an accessible name. The linter will flag this as an Error."
+msgstr ""
+
+#: build/icon/index.js:1
+msgid "No icon selected"
+msgstr ""
+
+#. translators: %d is the number of accessibility issues on this block.
+#: build/index.js:4
+#, js-format
+msgid "%d accessibility issue — open checks"
+msgid_plural "%d accessibility issues — open checks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/index.js:4
+msgid "— none —"
+msgstr ""
+
+#: build/index.js:4
+msgid "Search and pick the content’s language so screen readers pronounce it correctly. Leave blank to inherit the page language."
+msgstr ""
+
+#: build/index.js:4
+msgid "Search languages…"
+msgstr ""
+
+#: build/index.js:4
+#: build/index.js:10
+msgid "Accessibility"
+msgstr ""
+
+#: build/index.js:4
+msgid "Language (lang)"
+msgstr ""
+
+#: build/index.js:4
+msgid "from the aria-labelledby element"
+msgstr ""
+
+#: build/index.js:4
+msgid "(none — screen readers may have nothing to read out)"
+msgstr ""
+
+#: build/index.js:4
+msgid "Accessible name:"
+msgstr ""
+
+#: build/index.js:4
+msgid "What screen readers will most likely read out. Only change it below if you have a clear reason."
+msgstr ""
+
+#: build/index.js:4
+msgid "Replaces the name shown above. Leave blank to keep that name."
+msgstr ""
+
+#: build/index.js:4
+msgid "Described by (aria-describedby)"
+msgstr ""
+
+#: build/index.js:4
+msgid "Type the ID of another element on the page whose text adds a longer description (without the “#”)."
+msgstr ""
+
+#: build/index.js:4
+msgid "Labelled by (aria-labelledby)"
+msgstr ""
+
+#: build/index.js:4
+msgid "Type the ID of another element whose text should be this block’s accessible name (without the “#”)."
+msgstr ""
+
+#: build/index.js:4
+#: build/testimonial/index.js:1
+msgid "Role"
+msgstr ""
+
+#: build/index.js:4
+msgid "Only roles that suit this block’s element are listed."
+msgstr ""
+
+#: build/index.js:4
+msgid "Contrast ratio:"
+msgstr ""
+
+#: build/index.js:4
+msgid "AA normal text"
+msgstr ""
+
+#: build/index.js:4
+msgid "AA large text"
+msgstr ""
+
+#: build/index.js:4
+msgid "Passes for large text only (24px and up, or 18.66px and up if bold). Normal-size text needs more contrast to pass WCAG AA."
+msgstr ""
+
+#: build/index.js:4
+msgid "Not enough contrast for WCAG AA (needs 4.5:1 for normal text, 3:1 for large text). Choose colors with more contrast."
+msgstr ""
+
+#: build/index.js:4
+msgid "Site default"
+msgstr ""
+
+#: build/index.js:4
+msgid "Language"
+msgstr ""
+
+#: build/index.js:4
+msgid "Page language"
+msgstr ""
+
+#: build/index.js:4
+msgid "Set a different language for this page — use it when the whole page is in another language. Leave “Site default” to use the site’s language."
+msgstr ""
+
+#: build/index.js:4
+msgid "Error"
+msgstr ""
+
+#: build/index.js:4
+#: build/password-input/index.js:1
+#: build/text-area/index.js:1
+#: build/text-input/index.js:1
+msgid "Warning"
+msgstr ""
+
+#: build/index.js:4
+msgid "Info"
+msgstr ""
+
+#: build/index.js:4
+msgid "No accessibility issues found on this page."
+msgstr ""
+
+#: build/index.js:4
+msgid "Show block"
+msgstr ""
+
+#. translators: %d — number of accessibility errors found.
+#: build/index.js:7
+#, js-format
+msgid "%d error"
+msgid_plural "%d errors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d — number of accessibility warnings found.
+#: build/index.js:10
+#, js-format
+msgid "%d warning"
+msgid_plural "%d warnings"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/index.js:10
+msgid "Accessibility checks"
+msgstr ""
+
+#: build/inline-set/index.js:1
+msgid "Horizontal"
+msgstr ""
+
+#: build/inline-set/index.js:1
+msgid "Vertical"
+msgstr ""
+
+#: build/inline-set/index.js:1
+msgid "Small (0.25rem)"
+msgstr ""
+
+#: build/inline-set/index.js:1
+msgid "Medium (0.5rem)"
+msgstr ""
+
+#: build/inline-set/index.js:1
+msgid "Large (1rem)"
+msgstr ""
+
+#: build/inline-set/index.js:1
+msgid "X-large (1.5rem)"
+msgstr ""
+
+#: build/inline-set/index.js:1
+#: build/stat/index.js:1
+#: build/testimonial/index.js:1
+msgid "Center"
+msgstr ""
+
+#: build/inline-set/index.js:1
+msgid "Space between"
+msgstr ""
+
+#: build/inline-set/index.js:1
+msgid "Inline set"
+msgstr ""
+
+#: build/inline-set/index.js:1
+#: build/radio-button-group/index.js:1
+#: build/tabs/index.js:1
+msgid "Orientation"
+msgstr ""
+
+#: build/inline-set/index.js:1
+msgid "Gap"
+msgstr ""
+
+#: build/inline-set/index.js:1
+#: build/stat/index.js:1
+#: build/testimonial/index.js:1
+#: build/tooltip/index.js:1
+msgid "Alignment"
+msgstr ""
+
+#: build/inline-set/index.js:1
+msgid "Wrap to next line when out of space"
+msgstr ""
+
+#: build/link/index.js:1
+msgid "Inline style"
+msgstr ""
+
+#: build/link/index.js:1
+msgid "Show visited state"
+msgstr ""
+
+#: build/link/index.js:1
+msgid "Target & icon"
+msgstr ""
+
+#: build/link/index.js:1
+msgid "rel"
+msgstr ""
+
+#: build/link/index.js:1
+msgid "Trailing icon"
+msgstr ""
+
+#: build/link/index.js:1
+msgid "Search the Carbon icon library. Leave empty for none."
+msgstr ""
+
+#: build/list-item/index.js:1
+msgid "List item"
+msgstr ""
+
+#: build/list/index.js:1
+msgid "Text (one item per line)"
+msgstr ""
+
+#: build/list/index.js:1
+msgid "List"
+msgstr ""
+
+#: build/list/index.js:1
+#: build/text-input/index.js:1
+msgid "Type"
+msgstr ""
+
+#: build/list/index.js:1
+msgid "Expressive type"
+msgstr ""
+
+#: build/list/index.js:1
+msgid "Nested style"
+msgstr ""
+
+#: build/list/index.js:1
+msgid "Each line (or list item) becomes one list item. HTML <ul>/<ol> and indented Markdown create nested sub-lists, and switch the list type to match."
+msgstr ""
+
+#: build/list/index.js:1
+msgid "This list already has items. Replace them with the pasted content?"
+msgstr ""
+
+#: build/list/index.js:1
+msgid "Generate list items"
+msgstr ""
+
+#: build/list/index.js:1
+msgid "Populate this list from JSON, a REST API, or a WP_Query — available in AWT Premium."
+msgstr ""
+
+#: build/menu-button/index.js:1
+msgid "Menu button"
+msgstr ""
+
+#: build/menu-button/index.js:1
+msgid "Menu alignment"
+msgstr ""
+
+#: build/menu-button/index.js:1
+msgid "Items"
+msgstr ""
+
+#: build/menu-button/index.js:1
+msgid "Link (optional)"
+msgstr ""
+
+#: build/menu-button/index.js:1
+msgid "Selecting this item sends visitors here. Leave empty for an action item (use Value below)."
+msgstr ""
+
+#: build/menu-button/index.js:1
+msgid "Remove"
+msgstr ""
+
+#: build/menu-button/index.js:1
+msgid "Add item"
+msgstr ""
+
+#: build/menu-button/index.js:1
+msgid "Menu label"
+msgstr ""
+
+#: build/modal-opener/index.js:1
+msgid "Modal opener"
+msgstr ""
+
+#: build/modal-opener/index.js:1
+msgid "Modal id to open"
+msgstr ""
+
+#: build/modal-opener/index.js:1
+msgid "Must match the awt/modal block's id."
+msgstr ""
+
+#: build/modal/index.js:1
+msgid "Modal"
+msgstr ""
+
+#: build/modal/index.js:1
+#: build/side-nav/index.js:1
+msgid "DOM id"
+msgstr ""
+
+#: build/modal/index.js:1
+msgid "An awt/modal-opener with a matching Panel ID opens this modal."
+msgstr ""
+
+#: build/modal/index.js:1
+msgid "Optional label (above heading)"
+msgstr ""
+
+#: build/modal/index.js:1
+msgid "Primary action label"
+msgstr ""
+
+#: build/modal/index.js:1
+msgid "Secondary action label"
+msgstr ""
+
+#: build/modal/index.js:1
+msgid "Danger styling"
+msgstr ""
+
+#: build/modal/index.js:1
+msgid "Primary action link"
+msgstr ""
+
+#: build/modal/index.js:1
+msgid "URL (turns the primary button into a link)"
+msgstr ""
+
+#: build/modal/index.js:1
+msgid "Primary action — on click"
+msgstr ""
+
+#: build/modal/index.js:1
+msgid "This is a preview for editing. On your live site the modal stays hidden until a visitor opens it."
+msgstr ""
+
+#: build/modal/index.js:1
+msgid "Modal heading"
+msgstr ""
+
+#: build/notification/index.js:1
+msgid "Inline"
+msgstr ""
+
+#: build/notification/index.js:1
+msgid "Toast"
+msgstr ""
+
+#: build/notification/index.js:1
+msgid "Low contrast"
+msgstr ""
+
+#: build/notification/index.js:1
+msgid "Hide close button"
+msgstr ""
+
+#: build/notification/index.js:1
+msgid "Notification title"
+msgstr ""
+
+#: build/notification/index.js:1
+msgid "Subtitle (optional)"
+msgstr ""
+
+#: build/notification/index.js:1
+msgid "Caption (toast only)"
+msgstr ""
+
+#: build/pagination/index.js:1
+msgid "On archive / blog templates, leave Total pages = 0 and the block auto-detects the main query's page count."
+msgstr ""
+
+#: build/pagination/index.js:1
+msgid "Total pages (0 = auto from main query)"
+msgstr ""
+
+#: build/pagination/index.js:1
+msgid "Current page (0 = auto)"
+msgstr ""
+
+#: build/pagination/index.js:1
+msgid "Base URL (leave blank for current archive)"
+msgstr ""
+
+#: build/password-input/index.js:1
+msgid "Password input"
+msgstr ""
+
+#: build/password-input/index.js:1
+#: build/select/index.js:1
+#: build/text-area/index.js:1
+#: build/text-input/index.js:1
+#: build/toggle/index.js:1
+msgid "Visually hide label"
+msgstr ""
+
+#: build/password-input/index.js:1
+#: build/text-input/index.js:1
+msgid "Autocomplete"
+msgstr ""
+
+#: build/password-input/index.js:1
+msgid "Toggle button labels"
+msgstr ""
+
+#: build/password-input/index.js:1
+msgid "Show-password label"
+msgstr ""
+
+#: build/password-input/index.js:1
+msgid "Hide-password label"
+msgstr ""
+
+#: build/password-input/index.js:1
+#: build/text-area/index.js:1
+#: build/text-input/index.js:1
+msgid "Warning message"
+msgstr ""
+
+#: build/pricing-tile/index.js:1
+msgid "Pricing tile"
+msgstr ""
+
+#: build/pricing-tile/index.js:1
+msgid "Featured"
+msgstr ""
+
+#: build/pricing-tile/index.js:1
+msgid "Visual emphasis (accent border + slight elevation). Typically one per row."
+msgstr ""
+
+#: build/pricing-tile/index.js:1
+msgid "Badge text"
+msgstr ""
+
+#: build/pricing-tile/index.js:1
+msgid "Optional. E.g. \"Most popular\", \"Best value\"."
+msgstr ""
+
+#: build/pricing-tile/index.js:1
+msgid "Selectable (radio-tile style)"
+msgstr ""
+
+#: build/pricing-tile/index.js:1
+msgid "Tiles act as a radio group — picking one clears the others. Visual treatment only at Stage 1; selection state is purely decorative."
+msgstr ""
+
+#: build/pricing-tile/index.js:1
+msgid "Price period"
+msgstr ""
+
+#: build/pricing-tile/index.js:1
+msgid "E.g. \"/month\", \"/year\". Rendered inline after the price. Leave empty for \"Free\" or \"Custom\" pricing."
+msgstr ""
+
+#: build/pricing-tile/index.js:1
+msgid "CTA button kind"
+msgstr ""
+
+#: build/pricing-tile/index.js:1
+msgid "Secondary"
+msgstr ""
+
+#: build/pricing-tile/index.js:1
+msgid "Tertiary"
+msgstr ""
+
+#: build/pricing-tile/index.js:1
+msgid "Ghost"
+msgstr ""
+
+#: build/pricing-tile/index.js:1
+msgid "CTA href"
+msgstr ""
+
+#: build/pricing-tile/index.js:1
+msgid "Tier name"
+msgstr ""
+
+#: build/pricing-tile/index.js:1
+msgid "Price (e.g. $49)"
+msgstr ""
+
+#: build/pricing-tile/index.js:1
+msgid "1–3 sentence pitch for this tier"
+msgstr ""
+
+#: build/pricing-tile/index.js:1
+msgid "Get started"
+msgstr ""
+
+#: build/radio-button-group/index.js:1
+msgid "Group"
+msgstr ""
+
+#: build/radio-button-group/index.js:1
+msgid "Shared name attribute"
+msgstr ""
+
+#: build/radio-button-group/index.js:1
+msgid "Label position"
+msgstr ""
+
+#: build/radio-button/index.js:1
+msgid "Radio button"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "None (full width)"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "Narrow (42rem)"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "Content (66rem)"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "Wide (82.5rem)"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "Custom"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "Inherit from page"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "Light (active light variant)"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "Dark (active dark variant)"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "Force g10"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "Force g100"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "Transparent"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "Vertical padding"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "Horizontal padding"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "Max width"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "Custom max width (e.g., 720px)"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "Appearance"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "Background color (palette token)"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "Theme scope"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "Element"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "HTML tag"
+msgstr ""
+
+#: build/section/index.js:1
+msgid "Recommended when multiple <section> elements appear on the same page."
+msgstr ""
+
+#: build/select/index.js:1
+msgid "Placeholder (first option)"
+msgstr ""
+
+#: build/side-nav-link/index.js:1
+msgid "Side nav link"
+msgstr ""
+
+#: build/side-nav-section/index.js:1
+msgid "Side nav section"
+msgstr ""
+
+#: build/side-nav-section/index.js:1
+#: build/side-nav/index.js:1
+msgid "Default expanded"
+msgstr ""
+
+#: build/side-nav/index.js:1
+msgid "Side nav mode is \"none\" — this block does not render on the front-end."
+msgstr ""
+
+#: build/side-nav/index.js:1
+msgid "Side nav"
+msgstr ""
+
+#: build/side-nav/index.js:1
+msgid "Mode"
+msgstr ""
+
+#: build/side-nav/index.js:1
+msgid "Persistent"
+msgstr ""
+
+#: build/side-nav/index.js:1
+msgid "Rail"
+msgstr ""
+
+#: build/side-nav/index.js:1
+msgid "Overlay"
+msgstr ""
+
+#: build/side-nav/index.js:1
+msgid "User can toggle"
+msgstr ""
+
+#: build/side-nav/index.js:1
+msgid "Match a header-action panelId to this for a toggle button to control the side nav."
+msgstr ""
+
+#: build/skip-link/index.js:1
+msgid "Skip link"
+msgstr ""
+
+#: build/skip-link/index.js:1
+msgid "Visible-on-focus label"
+msgstr ""
+
+#: build/skip-link/index.js:1
+msgid "Target element ID"
+msgstr ""
+
+#: build/skip-link/index.js:1
+msgid "DOM id of the page landmark to skip to (e.g., main-content)."
+msgstr ""
+
+#: build/stat/index.js:1
+msgid "Statistic"
+msgstr ""
+
+#: build/stat/index.js:1
+msgid "Heading level"
+msgstr ""
+
+#: build/stat/index.js:1
+msgid "The label under the number is plain text by default. Pick a heading level only when the statistic starts a new section of the page."
+msgstr ""
+
+#: build/stat/index.js:1
+msgid "Not a heading (default)"
+msgstr ""
+
+#: build/stat/index.js:1
+msgid "Heading 3"
+msgstr ""
+
+#: build/stat/index.js:1
+msgid "90%"
+msgstr ""
+
+#: build/stat/index.js:1
+msgid "Heading describing the statistic"
+msgstr ""
+
+#: build/stat/index.js:1
+msgid "Optional supporting description"
+msgstr ""
+
+#: build/tab/index.js:1
+msgid "Tab label"
+msgstr ""
+
+#: build/tag/index.js:1
+msgid "Filter (dismissible)"
+msgstr ""
+
+#: build/tag/index.js:1
+msgid "Disabled while a link URL is set — a linked tag can’t be dismissible."
+msgstr ""
+
+#: build/tag/index.js:1
+msgid "URL (makes the tag a link)"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Testimonial"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Quote size"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Medium (24px)"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Large (36px — default)"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Extra large (48px)"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Mark style"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Quotation glyph style at the open of the quote."
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Double curly “ ” (default)"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Double straight \" \""
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Single curly ‘ ’"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Plain (no background)"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Card (layer-01 background)"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Attribution layout"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Stacked (name / role / org on separate lines)"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Inline (name · role · org)"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Author avatar"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Replace avatar"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Upload avatar"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Avatar alt text"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Required when an avatar is set. The linter flags missing alt as an Error."
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Remove avatar"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Quote body — renders in IBM Plex Serif"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Author name"
+msgstr ""
+
+#: build/testimonial/index.js:1
+msgid "Organization"
+msgstr ""
+
+#: build/text-area/index.js:1
+msgid "Text area"
+msgstr ""
+
+#: build/text-area/index.js:1
+#: build/text-input/index.js:1
+msgid "Default value"
+msgstr ""
+
+#: build/text-area/index.js:1
+msgid "Rows"
+msgstr ""
+
+#: build/text-area/index.js:1
+msgid "Cols (0 = auto)"
+msgstr ""
+
+#: build/text-area/index.js:1
+#: build/text-input/index.js:1
+msgid "Maxlength"
+msgstr ""
+
+#: build/text-area/index.js:1
+#: build/text-input/index.js:1
+#: build/toggle/index.js:1
+msgid "Readonly"
+msgstr ""
+
+#: build/text-input/index.js:1
+msgid "Field"
+msgstr ""
+
+#: build/text-input/index.js:1
+msgid "Sets the HTML input type. Changes on-screen keyboards (mobile), browser validation and autofill — most types look identical on a desktop preview."
+msgstr ""
+
+#: build/text-input/index.js:1
+msgid "Inline layout"
+msgstr ""
+
+#: build/text-input/index.js:1
+msgid "Label sits to the left of the input on one row."
+msgstr ""
+
+#: build/text-input/index.js:1
+msgid "Usage"
+msgstr ""
+
+#: build/text-input/index.js:1
+msgid "Fluid layout"
+msgstr ""
+
+#: build/text-input/index.js:1
+msgid "Carbon fluid variant: label sits inside the field area. Suited to data-entry forms."
+msgstr ""
+
+#: build/text-input/index.js:1
+msgid "Constraints"
+msgstr ""
+
+#: build/text-input/index.js:1
+msgid "Pattern"
+msgstr ""
+
+#: build/tile/index.js:1
+msgid "Tile"
+msgstr ""
+
+#: build/tile/index.js:1
+msgid "Default (read-only)"
+msgstr ""
+
+#: build/tile/index.js:1
+msgid "Clickable (renders as link)"
+msgstr ""
+
+#: build/tile/index.js:1
+msgid "Selectable (checkbox / radio-tile)"
+msgstr ""
+
+#: build/tile/index.js:1
+msgid "Expandable (details / summary)"
+msgstr ""
+
+#: build/tile/index.js:1
+msgid "Link URL"
+msgstr ""
+
+#: build/tile/index.js:1
+msgid "The address this tile links to."
+msgstr ""
+
+#: build/tile/index.js:1
+msgid "Group name (for radio-tile group)"
+msgstr ""
+
+#: build/tile/index.js:1
+msgid "Tiles sharing the same group name form a radio group — only one can be selected. Leave empty for a single checkbox-style toggle."
+msgstr ""
+
+#: build/tile/index.js:1
+msgid "Summary (visible header)"
+msgstr ""
+
+#: build/toggle/index.js:1
+msgid "Toggle"
+msgstr ""
+
+#: build/toggle/index.js:1
+msgid "On by default"
+msgstr ""
+
+#: build/toggle/index.js:1
+msgid "State labels"
+msgstr ""
+
+#: build/toggle/index.js:1
+msgid "Off state label"
+msgstr ""
+
+#: build/toggle/index.js:1
+msgid "On state label"
+msgstr ""
+
+#: build/toggletip/index.js:1
+msgid "Toggletip"
+msgstr ""
+
+#: build/toggletip/index.js:1
+msgid "Trigger label (visible)"
+msgstr ""
+
+#: build/toggletip/index.js:1
+msgid "Optional. Renders before the info button."
+msgstr ""
+
+#: build/toggletip/index.js:1
+msgid "Trigger accessible name"
+msgstr ""
+
+#: build/toggletip/index.js:1
+msgid "Read by screen readers (e.g., \"Learn more\")."
+msgstr ""
+
+#: build/toggletip/index.js:1
+msgid "Body of the popover that opens on click."
+msgstr ""
+
+#: build/toggletip/index.js:1
+msgid "Placement"
+msgstr ""
+
+#: build/tooltip/index.js:1
+msgid "Tooltip"
+msgstr ""
+
+#: build/tooltip/index.js:1
+msgid "Delays (ms)"
+msgstr ""
+
+#: build/tooltip/index.js:1
+msgid "Show delay"
+msgstr ""
+
+#: build/tooltip/index.js:1
+msgid "Hide delay"
+msgstr ""
+
+#: build/tooltip/index.js:1
+msgid "Trigger text"
+msgstr ""
+
+#: build/accordion-item/block.json
+msgctxt "block title"
+msgid "Accordion item"
+msgstr ""
+
+#: build/accordion-item/block.json
+msgctxt "block description"
+msgid "One expandable section inside an accordion."
+msgstr ""
+
+#: build/accordion-item/block.json
+#: build/accordion/block.json
+msgctxt "block keyword"
+msgid "accordion"
+msgstr ""
+
+#: build/accordion-item/block.json
+#: build/accordion/block.json
+msgctxt "block keyword"
+msgid "collapsible"
+msgstr ""
+
+#: build/accordion-item/block.json
+#: build/section/block.json
+#: build/side-nav-section/block.json
+msgctxt "block keyword"
+msgid "section"
+msgstr ""
+
+#: build/accordion/block.json
+msgctxt "block title"
+msgid "Accordion"
+msgstr ""
+
+#: build/accordion/block.json
+msgctxt "block description"
+msgid "An accordion — a vertical stack of expandable sections. Add Accordion item blocks inside it."
+msgstr ""
+
+#: build/accordion/block.json
+msgctxt "block keyword"
+msgid "expander"
+msgstr ""
+
+#: build/accordion/block.json
+#: build/breadcrumb/block.json
+#: build/button/block.json
+#: build/checkbox/block.json
+#: build/code-snippet/block.json
+#: build/content-switcher/block.json
+#: build/data-table/block.json
+#: build/dropdown/block.json
+#: build/form/block.json
+#: build/header-brand/block.json
+#: build/icon/block.json
+#: build/inline-set/block.json
+#: build/link/block.json
+#: build/list/block.json
+#: build/menu-button/block.json
+#: build/modal-opener/block.json
+#: build/modal/block.json
+#: build/notification/block.json
+#: build/pagination/block.json
+#: build/password-input/block.json
+#: build/radio-button-group/block.json
+#: build/select/block.json
+#: build/side-nav/block.json
+#: build/tabs/block.json
+#: build/tag/block.json
+#: build/text-area/block.json
+#: build/text-input/block.json
+#: build/tile/block.json
+#: build/toggle/block.json
+#: build/toggletip/block.json
+#: build/tooltip/block.json
+msgctxt "block keyword"
+msgid "carbon"
+msgstr ""
+
+#: build/breadcrumb-item/block.json
+msgctxt "block title"
+msgid "Breadcrumb item"
+msgstr ""
+
+#: build/breadcrumb-item/block.json
+msgctxt "block description"
+msgid "One step in a breadcrumb trail. It shows as plain text (not a link) when it has no URL or is the current page."
+msgstr ""
+
+#: build/breadcrumb/block.json
+msgctxt "block title"
+msgid "Breadcrumb"
+msgstr ""
+
+#: build/breadcrumb/block.json
+msgctxt "block description"
+msgid "A breadcrumb trail showing where the current page sits in your site. The last item marks the current page."
+msgstr ""
+
+#: build/breadcrumb/block.json
+msgctxt "block keyword"
+msgid "breadcrumb"
+msgstr ""
+
+#: build/breadcrumb/block.json
+#: build/header-nav/block.json
+#: build/side-nav/block.json
+#: build/tabs/block.json
+msgctxt "block keyword"
+msgid "navigation"
+msgstr ""
+
+#: build/button/block.json
+msgctxt "block title"
+msgid "Button"
+msgstr ""
+
+#: build/button/block.json
+msgctxt "block description"
+msgid "A button. Use it to trigger an action, or set a URL to turn it into a link."
+msgstr ""
+
+#: build/button/block.json
+msgctxt "block keyword"
+msgid "button"
+msgstr ""
+
+#: build/button/block.json
+msgctxt "block keyword"
+msgid "cta"
+msgstr ""
+
+#: build/button/block.json
+#: build/header-action/block.json
+msgctxt "block keyword"
+msgid "action"
+msgstr ""
+
+#: build/checkbox/block.json
+msgctxt "block title"
+msgid "Checkbox"
+msgstr ""
+
+#: build/checkbox/block.json
+msgctxt "block description"
+msgid "A checkbox with a label, optional helper and error text, and an indeterminate (partially-checked) state."
+msgstr ""
+
+#: build/checkbox/block.json
+msgctxt "block keyword"
+msgid "checkbox"
+msgstr ""
+
+#: build/checkbox/block.json
+#: build/form/block.json
+#: build/password-input/block.json
+#: build/text-area/block.json
+#: build/text-input/block.json
+msgctxt "block keyword"
+msgid "input"
+msgstr ""
+
+#: build/checkbox/block.json
+#: build/form/block.json
+#: build/password-input/block.json
+#: build/radio-button-group/block.json
+#: build/select/block.json
+#: build/text-area/block.json
+#: build/text-input/block.json
+msgctxt "block keyword"
+msgid "form"
+msgstr ""
+
+#: build/code-snippet/block.json
+msgctxt "block title"
+msgid "Code snippet"
+msgstr ""
+
+#: build/code-snippet/block.json
+msgctxt "block description"
+msgid "A styled code snippet with a copy button — inline, single-line, or multi-line. Use the standard Code block for plain code; use this when you want the styling and click-to-copy."
+msgstr ""
+
+#: build/code-snippet/block.json
+msgctxt "block keyword"
+msgid "code"
+msgstr ""
+
+#: build/code-snippet/block.json
+msgctxt "block keyword"
+msgid "snippet"
+msgstr ""
+
+#: build/code-snippet/block.json
+msgctxt "block keyword"
+msgid "copy"
+msgstr ""
+
+#: build/code-snippet/block.json
+msgctxt "block keyword"
+msgid "monospace"
+msgstr ""
+
+#: build/color-scheme-toggle/block.json
+msgctxt "block title"
+msgid "Color scheme toggle"
+msgstr ""
+
+#: build/color-scheme-toggle/block.json
+msgctxt "block description"
+msgid "A switch that lets visitors choose light or dark mode. Remembers each visitor's choice."
+msgstr ""
+
+#: build/color-scheme-toggle/block.json
+msgctxt "block keyword"
+msgid "dark mode"
+msgstr ""
+
+#: build/color-scheme-toggle/block.json
+msgctxt "block keyword"
+msgid "light mode"
+msgstr ""
+
+#: build/color-scheme-toggle/block.json
+msgctxt "block keyword"
+msgid "theme switch"
+msgstr ""
+
+#: build/color-scheme-toggle/block.json
+msgctxt "block keyword"
+msgid "color scheme"
+msgstr ""
+
+#: build/content-switcher-item/block.json
+msgctxt "block title"
+msgid "Switcher segment"
+msgstr ""
+
+#: build/content-switcher-item/block.json
+msgctxt "block description"
+msgid "One button in a content switcher. It pairs by position with the matching switcher panel."
+msgstr ""
+
+#: build/content-switcher-panel/block.json
+msgctxt "block title"
+msgid "Switcher panel"
+msgstr ""
+
+#: build/content-switcher-panel/block.json
+msgctxt "block description"
+msgid "The content shown when its matching switcher segment is selected. Pairs by position with a switcher segment."
+msgstr ""
+
+#: build/content-switcher/block.json
+msgctxt "block title"
+msgid "Content switcher"
+msgstr ""
+
+#: build/content-switcher/block.json
+msgctxt "block description"
+msgid "A segmented control that swaps between content panels. Add matching pairs of switcher segments and panels. Best for up to four short options — use Tabs for more."
+msgstr ""
+
+#: build/content-switcher/block.json
+msgctxt "block keyword"
+msgid "content switcher"
+msgstr ""
+
+#: build/content-switcher/block.json
+msgctxt "block keyword"
+msgid "segmented"
+msgstr ""
+
+#: build/content-switcher/block.json
+#: build/toggle/block.json
+msgctxt "block keyword"
+msgid "toggle"
+msgstr ""
+
+#: build/content-switcher/block.json
+#: build/tabs/block.json
+msgctxt "block keyword"
+msgid "tabs"
+msgstr ""
+
+#: build/data-table/block.json
+msgctxt "block title"
+msgid "Data table"
+msgstr ""
+
+#: build/data-table/block.json
+msgctxt "block description"
+msgid "A data table with sortable columns, a sticky header, and striped rows. Selectable and expandable rows, plus dynamic data sources, are available in AWT Premium."
+msgstr ""
+
+#: build/data-table/block.json
+msgctxt "block keyword"
+msgid "table"
+msgstr ""
+
+#: build/data-table/block.json
+msgctxt "block keyword"
+msgid "data table"
+msgstr ""
+
+#: build/data-table/block.json
+msgctxt "block keyword"
+msgid "sortable"
+msgstr ""
+
+#: build/dropdown/block.json
+msgctxt "block title"
+msgid "Dropdown"
+msgstr ""
+
+#: build/dropdown/block.json
+msgctxt "block description"
+msgid "A styled single-choice dropdown. Use the Select block instead if you want your device's native dropdown."
+msgstr ""
+
+#: build/dropdown/block.json
+#: build/header-menu/block.json
+#: build/menu-button/block.json
+#: build/select/block.json
+msgctxt "block keyword"
+msgid "dropdown"
+msgstr ""
+
+#: build/dropdown/block.json
+#: build/select/block.json
+msgctxt "block keyword"
+msgid "select"
+msgstr ""
+
+#: build/dropdown/block.json
+msgctxt "block keyword"
+msgid "single-select"
+msgstr ""
+
+#: build/faq-item/block.json
+msgctxt "block title"
+msgid "FAQ question"
+msgstr ""
+
+#: build/faq-item/block.json
+msgctxt "block description"
+msgid "A single question and answer that expands on click. Works like an accordion item, but also adds FAQ data that can help your questions appear in Google search results."
+msgstr ""
+
+#: build/faq-item/block.json
+msgctxt "block keyword"
+msgid "faq"
+msgstr ""
+
+#: build/faq-item/block.json
+msgctxt "block keyword"
+msgid "question"
+msgstr ""
+
+#: build/faq-item/block.json
+msgctxt "block keyword"
+msgid "answer"
+msgstr ""
+
+#: build/faq-item/block.json
+msgctxt "block keyword"
+msgid "disclosure"
+msgstr ""
+
+#: build/faq-item/block.json
+msgctxt "block keyword"
+msgid "schema"
+msgstr ""
+
+#: build/feature-grid/block.json
+msgctxt "block title"
+msgid "Feature grid"
+msgstr ""
+
+#: build/feature-grid/block.json
+msgctxt "block description"
+msgid "Responsive grid of feature tiles. Each child block becomes one feature cell."
+msgstr ""
+
+#: build/feature-grid/block.json
+msgctxt "block keyword"
+msgid "features"
+msgstr ""
+
+#: build/feature-grid/block.json
+msgctxt "block keyword"
+msgid "grid"
+msgstr ""
+
+#: build/feature-grid/block.json
+#: build/hero/block.json
+msgctxt "block keyword"
+msgid "marketing"
+msgstr ""
+
+#: build/footer-link/block.json
+msgctxt "block title"
+msgid "Footer link"
+msgstr ""
+
+#: build/footer-link/block.json
+msgctxt "block description"
+msgid "Single link inside a footer section."
+msgstr ""
+
+#: build/footer-link/block.json
+#: build/footer-section/block.json
+msgctxt "block keyword"
+msgid "footer"
+msgstr ""
+
+#: build/footer-link/block.json
+#: build/header-nav-item/block.json
+#: build/link/block.json
+#: build/side-nav-link/block.json
+msgctxt "block keyword"
+msgid "link"
+msgstr ""
+
+#: build/footer-section/block.json
+msgctxt "block title"
+msgid "Footer section"
+msgstr ""
+
+#: build/footer-section/block.json
+msgctxt "block description"
+msgid "A column of footer links with an optional heading. Several sections arrange into a responsive grid."
+msgstr ""
+
+#: build/footer-section/block.json
+msgctxt "block keyword"
+msgid "column"
+msgstr ""
+
+#: build/footer-section/block.json
+msgctxt "block keyword"
+msgid "links"
+msgstr ""
+
+#: build/form/block.json
+msgctxt "block title"
+msgid "Form"
+msgstr ""
+
+#: build/form/block.json
+msgctxt "block description"
+msgid "A form container. Add any input blocks inside it — text inputs, checkboxes, radio groups, toggles, and buttons."
+msgstr ""
+
+#: build/form/block.json
+msgctxt "block keyword"
+msgid "submit"
+msgstr ""
+
+#: build/header-action/block.json
+msgctxt "block title"
+msgid "Header action"
+msgstr ""
+
+#: build/header-action/block.json
+msgctxt "block description"
+msgid "A square icon button for the header. It can open a panel, link to a page, or run a simple click action."
+msgstr ""
+
+#: build/header-action/block.json
+#: build/header-brand/block.json
+#: build/header-global/block.json
+#: build/header-menu/block.json
+#: build/header-nav-item/block.json
+#: build/header-nav/block.json
+msgctxt "block keyword"
+msgid "header"
+msgstr ""
+
+#: build/header-action/block.json
+msgctxt "block keyword"
+msgid "icon button"
+msgstr ""
+
+#: build/header-brand/block.json
+msgctxt "block title"
+msgid "Header brand"
+msgstr ""
+
+#: build/header-brand/block.json
+msgctxt "block description"
+msgid "Your site name, with an optional prefix and/or logo, linking to your home page."
+msgstr ""
+
+#: build/header-brand/block.json
+msgctxt "block keyword"
+msgid "brand"
+msgstr ""
+
+#: build/header-brand/block.json
+msgctxt "block keyword"
+msgid "logo"
+msgstr ""
+
+#: build/header-brand/block.json
+msgctxt "block keyword"
+msgid "site title"
+msgstr ""
+
+#: build/header-global/block.json
+msgctxt "block title"
+msgid "Header global actions"
+msgstr ""
+
+#: build/header-global/block.json
+msgctxt "block description"
+msgid "A right-aligned container for header buttons such as search, user menu, and the light/dark toggle."
+msgstr ""
+
+#: build/header-global/block.json
+msgctxt "block keyword"
+msgid "actions"
+msgstr ""
+
+#: build/header-global/block.json
+msgctxt "block keyword"
+msgid "global"
+msgstr ""
+
+#: build/header-menu/block.json
+msgctxt "block title"
+msgid "Header menu (multi-level)"
+msgstr ""
+
+#: build/header-menu/block.json
+msgctxt "block description"
+msgid "A top-level nav item that opens a submenu of links. Add Header navigation item blocks inside it."
+msgstr ""
+
+#: build/header-menu/block.json
+#: build/header-nav-item/block.json
+#: build/header-nav/block.json
+msgctxt "block keyword"
+msgid "nav"
+msgstr ""
+
+#: build/header-menu/block.json
+#: build/menu-button/block.json
+msgctxt "block keyword"
+msgid "menu"
+msgstr ""
+
+#: build/header-menu/block.json
+msgctxt "block keyword"
+msgid "submenu"
+msgstr ""
+
+#: build/header-menu/block.json
+msgctxt "block keyword"
+msgid "multi-level"
+msgstr ""
+
+#: build/header-nav-item/block.json
+msgctxt "block title"
+msgid "Header navigation item"
+msgstr ""
+
+#: build/header-nav-item/block.json
+msgctxt "block description"
+msgid "Single horizontal nav link inside an awt/header-nav."
+msgstr ""
+
+#: build/header-nav/block.json
+msgctxt "block title"
+msgid "Header navigation"
+msgstr ""
+
+#: build/header-nav/block.json
+msgctxt "block description"
+msgid "A horizontal navigation menu for the header. Add Header navigation item blocks inside it."
+msgstr ""
+
+#: build/header-nav/block.json
+msgctxt "block keyword"
+msgid "primary"
+msgstr ""
+
+#: build/hero/block.json
+msgctxt "block title"
+msgid "Hero"
+msgstr ""
+
+#: build/hero/block.json
+msgctxt "block description"
+msgid "Large heading + supporting text + call-to-action. Foundation block for marketing pages."
+msgstr ""
+
+#: build/hero/block.json
+msgctxt "block keyword"
+msgid "hero"
+msgstr ""
+
+#: build/hero/block.json
+#: build/notification/block.json
+msgctxt "block keyword"
+msgid "banner"
+msgstr ""
+
+#: build/hero/block.json
+msgctxt "block keyword"
+msgid "headline"
+msgstr ""
+
+#: build/icon/block.json
+msgctxt "block title"
+msgid "Icon"
+msgstr ""
+
+#: build/icon/block.json
+msgctxt "block description"
+msgid "Standalone Carbon icon for decorative graphics, status indicators, or callouts in body content."
+msgstr ""
+
+#: build/icon/block.json
+msgctxt "block keyword"
+msgid "icon"
+msgstr ""
+
+#: build/icon/block.json
+msgctxt "block keyword"
+msgid "svg"
+msgstr ""
+
+#: build/inline-set/block.json
+msgctxt "block title"
+msgid "Inline set"
+msgstr ""
+
+#: build/inline-set/block.json
+msgctxt "block description"
+msgid "A container that lays out buttons, tags, icons, or links in a row with even spacing."
+msgstr ""
+
+#: build/inline-set/block.json
+msgctxt "block keyword"
+msgid "button set"
+msgstr ""
+
+#: build/inline-set/block.json
+#: build/side-nav-section/block.json
+msgctxt "block keyword"
+msgid "group"
+msgstr ""
+
+#: build/inline-set/block.json
+msgctxt "block keyword"
+msgid "row"
+msgstr ""
+
+#: build/inline-set/block.json
+msgctxt "block keyword"
+msgid "stack"
+msgstr ""
+
+#: build/link/block.json
+msgctxt "block title"
+msgid "Link"
+msgstr ""
+
+#: build/link/block.json
+msgctxt "block description"
+msgid "A styled text link, on its own or inline, with an optional trailing icon."
+msgstr ""
+
+#: build/link/block.json
+msgctxt "block keyword"
+msgid "anchor"
+msgstr ""
+
+#: build/list-item/block.json
+msgctxt "block title"
+msgid "List item"
+msgstr ""
+
+#: build/list-item/block.json
+msgctxt "block description"
+msgid "Item inside an AWT List. May contain a nested awt/list for sub-items."
+msgstr ""
+
+#: build/list/block.json
+msgctxt "block title"
+msgid "List"
+msgstr ""
+
+#: build/list/block.json
+msgctxt "block description"
+msgid "A list — bulleted, numbered, or styled numbered."
+msgstr ""
+
+#: build/list/block.json
+msgctxt "block keyword"
+msgid "list"
+msgstr ""
+
+#: build/list/block.json
+msgctxt "block keyword"
+msgid "ul"
+msgstr ""
+
+#: build/list/block.json
+msgctxt "block keyword"
+msgid "ol"
+msgstr ""
+
+#: build/menu-button/block.json
+msgctxt "block title"
+msgid "Menu button"
+msgstr ""
+
+#: build/menu-button/block.json
+msgctxt "block description"
+msgid "A button that opens a menu of options."
+msgstr ""
+
+#: build/modal-opener/block.json
+msgctxt "block title"
+msgid "Modal opener"
+msgstr ""
+
+#: build/modal-opener/block.json
+msgctxt "block description"
+msgid "A button that opens a Modal block. Point it at the modal you want to open."
+msgstr ""
+
+#: build/modal-opener/block.json
+#: build/modal/block.json
+msgctxt "block keyword"
+msgid "modal"
+msgstr ""
+
+#: build/modal-opener/block.json
+msgctxt "block keyword"
+msgid "trigger"
+msgstr ""
+
+#: build/modal-opener/block.json
+msgctxt "block keyword"
+msgid "opener"
+msgstr ""
+
+#: build/modal/block.json
+msgctxt "block title"
+msgid "Modal"
+msgstr ""
+
+#: build/modal/block.json
+msgctxt "block description"
+msgid "A pop-up dialog, hidden until opened by a Modal opener block. Keyboard focus stays inside it, Escape closes it, and focus returns to the button that opened it."
+msgstr ""
+
+#: build/modal/block.json
+msgctxt "block keyword"
+msgid "dialog"
+msgstr ""
+
+#: build/modal/block.json
+msgctxt "block keyword"
+msgid "overlay"
+msgstr ""
+
+#: build/notification/block.json
+msgctxt "block title"
+msgid "Notification"
+msgstr ""
+
+#: build/notification/block.json
+msgctxt "block description"
+msgid "A notification message, shown inline or as a pop-up toast. Screen readers announce it automatically."
+msgstr ""
+
+#: build/notification/block.json
+msgctxt "block keyword"
+msgid "notification"
+msgstr ""
+
+#: build/notification/block.json
+msgctxt "block keyword"
+msgid "alert"
+msgstr ""
+
+#: build/pagination/block.json
+msgctxt "block title"
+msgid "Pagination"
+msgstr ""
+
+#: build/pagination/block.json
+msgctxt "block description"
+msgid "Page navigation with numbered pages and previous/next controls. On blog, category, and search pages it works out the page count and current page for you."
+msgstr ""
+
+#: build/pagination/block.json
+msgctxt "block keyword"
+msgid "pagination"
+msgstr ""
+
+#: build/pagination/block.json
+msgctxt "block keyword"
+msgid "pages"
+msgstr ""
+
+#: build/pagination/block.json
+msgctxt "block keyword"
+msgid "archive"
+msgstr ""
+
+#: build/password-input/block.json
+msgctxt "block title"
+msgid "Password input"
+msgstr ""
+
+#: build/password-input/block.json
+msgctxt "block description"
+msgid "A password field with a show/hide button on the right edge."
+msgstr ""
+
+#: build/password-input/block.json
+#: build/text-input/block.json
+msgctxt "block keyword"
+msgid "password"
+msgstr ""
+
+#: build/password-input/block.json
+msgctxt "block keyword"
+msgid "credential"
+msgstr ""
+
+#: build/pricing-tile/block.json
+msgctxt "block title"
+msgid "Pricing tile"
+msgstr ""
+
+#: build/pricing-tile/block.json
+msgctxt "block description"
+msgid "A selectable pricing tile with a plan name, optional price, short description, and a call-to-action. Put feature comparisons in a separate Data table below, not inside the tile. A card-with-features style is available in AWT Premium."
+msgstr ""
+
+#: build/pricing-tile/block.json
+msgctxt "block keyword"
+msgid "pricing"
+msgstr ""
+
+#: build/pricing-tile/block.json
+#: build/tile/block.json
+msgctxt "block keyword"
+msgid "tile"
+msgstr ""
+
+#: build/pricing-tile/block.json
+msgctxt "block keyword"
+msgid "plan"
+msgstr ""
+
+#: build/pricing-tile/block.json
+msgctxt "block keyword"
+msgid "tier"
+msgstr ""
+
+#: build/pricing-tile/block.json
+msgctxt "block keyword"
+msgid "edition"
+msgstr ""
+
+#: build/radio-button-group/block.json
+msgctxt "block title"
+msgid "Radio button group"
+msgstr ""
+
+#: build/radio-button-group/block.json
+msgctxt "block description"
+msgid "A group of radio buttons with a shared label, so only one option can be chosen."
+msgstr ""
+
+#: build/radio-button-group/block.json
+msgctxt "block keyword"
+msgid "radio"
+msgstr ""
+
+#: build/radio-button-group/block.json
+msgctxt "block keyword"
+msgid "fieldset"
+msgstr ""
+
+#: build/radio-button/block.json
+msgctxt "block title"
+msgid "Radio button"
+msgstr ""
+
+#: build/radio-button/block.json
+msgctxt "block description"
+msgid "A single radio button. Place it inside a Radio button group."
+msgstr ""
+
+#: build/section/block.json
+msgctxt "block title"
+msgid "Section"
+msgstr ""
+
+#: build/section/block.json
+msgctxt "block description"
+msgid "A width-limited content wrapper with consistent spacing. It's the outer container for patterns like Hero, Pricing, and Feature grid."
+msgstr ""
+
+#: build/section/block.json
+msgctxt "block keyword"
+msgid "container"
+msgstr ""
+
+#: build/section/block.json
+msgctxt "block keyword"
+msgid "layout"
+msgstr ""
+
+#: build/section/block.json
+msgctxt "block keyword"
+msgid "wrapper"
+msgstr ""
+
+#: build/select/block.json
+msgctxt "block title"
+msgid "Select"
+msgstr ""
+
+#: build/select/block.json
+msgctxt "block description"
+msgid "A styled native dropdown. Best on mobile and in standard forms. Use the Dropdown block for a richer custom interface."
+msgstr ""
+
+#: build/side-nav-divider/block.json
+msgctxt "block title"
+msgid "Side nav divider"
+msgstr ""
+
+#: build/side-nav-divider/block.json
+msgctxt "block description"
+msgid "Visual separator between groups of side-nav links."
+msgstr ""
+
+#: build/side-nav-divider/block.json
+msgctxt "block keyword"
+msgid "divider"
+msgstr ""
+
+#: build/side-nav-divider/block.json
+msgctxt "block keyword"
+msgid "separator"
+msgstr ""
+
+#: build/side-nav-divider/block.json
+#: build/side-nav-link/block.json
+#: build/side-nav-section/block.json
+#: build/side-nav/block.json
+msgctxt "block keyword"
+msgid "side nav"
+msgstr ""
+
+#: build/side-nav-link/block.json
+msgctxt "block title"
+msgid "Side nav link"
+msgstr ""
+
+#: build/side-nav-link/block.json
+msgctxt "block description"
+msgid "Single nav link inside a side nav."
+msgstr ""
+
+#: build/side-nav-section/block.json
+msgctxt "block title"
+msgid "Side nav section"
+msgstr ""
+
+#: build/side-nav-section/block.json
+msgctxt "block description"
+msgid "Collapsible group of side-nav links with an optional heading."
+msgstr ""
+
+#: build/side-nav/block.json
+msgctxt "block title"
+msgid "Side nav"
+msgstr ""
+
+#: build/side-nav/block.json
+msgctxt "block description"
+msgid "A sidebar navigation menu. Add side-nav sections, links, and dividers inside it."
+msgstr ""
+
+#: build/side-nav/block.json
+msgctxt "block keyword"
+msgid "drawer"
+msgstr ""
+
+#: build/skip-link/block.json
+msgctxt "block title"
+msgid "Skip link"
+msgstr ""
+
+#: build/skip-link/block.json
+msgctxt "block description"
+msgid "A \"skip to content\" link for keyboard users. It's the first thing they reach and appears when focused."
+msgstr ""
+
+#: build/skip-link/block.json
+msgctxt "block keyword"
+msgid "skip"
+msgstr ""
+
+#: build/skip-link/block.json
+msgctxt "block keyword"
+msgid "accessibility"
+msgstr ""
+
+#: build/skip-link/block.json
+msgctxt "block keyword"
+msgid "a11y"
+msgstr ""
+
+#: build/skip-link/block.json
+msgctxt "block keyword"
+msgid "landmark"
+msgstr ""
+
+#: build/skip-link/block.json
+msgctxt "block keyword"
+msgid "bypass"
+msgstr ""
+
+#: build/stat/block.json
+msgctxt "block title"
+msgid "Statistic"
+msgstr ""
+
+#: build/stat/block.json
+msgctxt "block description"
+msgid "A large statistic number with a heading and optional description — good for highlighting key figures."
+msgstr ""
+
+#: build/stat/block.json
+msgctxt "block keyword"
+msgid "stat"
+msgstr ""
+
+#: build/stat/block.json
+msgctxt "block keyword"
+msgid "statistic"
+msgstr ""
+
+#: build/stat/block.json
+msgctxt "block keyword"
+msgid "metric"
+msgstr ""
+
+#: build/stat/block.json
+msgctxt "block keyword"
+msgid "number"
+msgstr ""
+
+#: build/stat/block.json
+msgctxt "block keyword"
+msgid "kpi"
+msgstr ""
+
+#: build/tab-panel/block.json
+msgctxt "block title"
+msgid "Tab panel"
+msgstr ""
+
+#: build/tab-panel/block.json
+msgctxt "block description"
+msgid "The content shown for its matching tab, paired by position."
+msgstr ""
+
+#: build/tab/block.json
+msgctxt "block title"
+msgid "Tab"
+msgstr ""
+
+#: build/tab/block.json
+msgctxt "block description"
+msgid "One tab button. It pairs by position with the matching Tab panel."
+msgstr ""
+
+#: build/tabs/block.json
+msgctxt "block title"
+msgid "Tabs"
+msgstr ""
+
+#: build/tabs/block.json
+msgctxt "block description"
+msgid "Tabs that switch between content panels. Add matching pairs of Tab and Tab panel blocks."
+msgstr ""
+
+#: build/tag/block.json
+msgctxt "block title"
+msgid "Tag"
+msgstr ""
+
+#: build/tag/block.json
+msgctxt "block description"
+msgid "A small colored label for categorizing or filtering. Choose from a range of colors."
+msgstr ""
+
+#: build/tag/block.json
+msgctxt "block keyword"
+msgid "tag"
+msgstr ""
+
+#: build/tag/block.json
+msgctxt "block keyword"
+msgid "chip"
+msgstr ""
+
+#: build/tag/block.json
+msgctxt "block keyword"
+msgid "label"
+msgstr ""
+
+#: build/testimonial/block.json
+msgctxt "block title"
+msgid "Testimonial"
+msgstr ""
+
+#: build/testimonial/block.json
+msgctxt "block description"
+msgid "A quote with attribution, styled for emphasis and marked up correctly as a quotation."
+msgstr ""
+
+#: build/testimonial/block.json
+msgctxt "block keyword"
+msgid "quote"
+msgstr ""
+
+#: build/testimonial/block.json
+msgctxt "block keyword"
+msgid "testimonial"
+msgstr ""
+
+#: build/testimonial/block.json
+msgctxt "block keyword"
+msgid "blockquote"
+msgstr ""
+
+#: build/testimonial/block.json
+msgctxt "block keyword"
+msgid "case study"
+msgstr ""
+
+#: build/text-area/block.json
+msgctxt "block title"
+msgid "Text area"
+msgstr ""
+
+#: build/text-area/block.json
+msgctxt "block description"
+msgid "A multi-line text field with a label, helper text, and error, warning, and read-only states."
+msgstr ""
+
+#: build/text-area/block.json
+msgctxt "block keyword"
+msgid "textarea"
+msgstr ""
+
+#: build/text-area/block.json
+msgctxt "block keyword"
+msgid "multi-line"
+msgstr ""
+
+#: build/text-input/block.json
+msgctxt "block title"
+msgid "Text input"
+msgstr ""
+
+#: build/text-input/block.json
+msgctxt "block description"
+msgid "A single-line text field with a label and optional helper, error, and warning text."
+msgstr ""
+
+#: build/text-input/block.json
+msgctxt "block keyword"
+msgid "text"
+msgstr ""
+
+#: build/text-input/block.json
+msgctxt "block keyword"
+msgid "email"
+msgstr ""
+
+#: build/tile/block.json
+msgctxt "block title"
+msgid "Tile"
+msgstr ""
+
+#: build/tile/block.json
+msgctxt "block description"
+msgid "A content box with a heading and body. Variants: default, clickable, selectable, and expandable."
+msgstr ""
+
+#: build/tile/block.json
+msgctxt "block keyword"
+msgid "card"
+msgstr ""
+
+#: build/tile/block.json
+msgctxt "block keyword"
+msgid "radio tile"
+msgstr ""
+
+#: build/tile/block.json
+msgctxt "block keyword"
+msgid "expandable"
+msgstr ""
+
+#: build/toggle/block.json
+msgctxt "block title"
+msgid "Toggle"
+msgstr ""
+
+#: build/toggle/block.json
+msgctxt "block description"
+msgid "An on/off switch for a single setting."
+msgstr ""
+
+#: build/toggle/block.json
+msgctxt "block keyword"
+msgid "switch"
+msgstr ""
+
+#: build/toggletip/block.json
+msgctxt "block title"
+msgid "Toggletip"
+msgstr ""
+
+#: build/toggletip/block.json
+msgctxt "block description"
+msgid "An info button that opens a small pop-up on click. Use it when the extra content needs to stay visible — for example links or longer text — instead of the hover Tooltip."
+msgstr ""
+
+#: build/toggletip/block.json
+msgctxt "block keyword"
+msgid "toggletip"
+msgstr ""
+
+#: build/toggletip/block.json
+#: build/tooltip/block.json
+msgctxt "block keyword"
+msgid "tooltip"
+msgstr ""
+
+#: build/toggletip/block.json
+#: build/tooltip/block.json
+msgctxt "block keyword"
+msgid "popover"
+msgstr ""
+
+#: build/toggletip/block.json
+msgctxt "block keyword"
+msgid "info"
+msgstr ""
+
+#: build/tooltip/block.json
+msgctxt "block title"
+msgid "Tooltip"
+msgstr ""
+
+#: build/tooltip/block.json
+msgctxt "block description"
+msgid "Wraps text, an icon, or a button and shows a short hint when a visitor hovers over or focuses it."
+msgstr ""
+
+#: build/tooltip/block.json
+msgctxt "block keyword"
+msgid "hint"
+msgstr ""

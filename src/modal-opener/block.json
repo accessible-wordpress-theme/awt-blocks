@@ -1,0 +1,47 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/modal-opener",
+	"carbonStyles": [
+		"button"
+	],
+	"awt_component": "modal",
+	"title": "Modal opener",
+	"category": "awt-feedback",
+	"description": "A button that opens a Modal block. Point it at the modal you want to open.",
+	"textdomain": "awt",
+	"keywords": [
+		"modal",
+		"trigger",
+		"opener",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"text": {
+			"type": "string",
+			"default": "Open modal"
+		},
+		"kind": {
+			"type": "string",
+			"default": "primary"
+		},
+		"size": {
+			"type": "string",
+			"default": "md"
+		},
+		"modalId": {
+			"type": "string",
+			"default": "awt-modal"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

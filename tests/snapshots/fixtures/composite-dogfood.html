@@ -1,0 +1,962 @@
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">AWT block + pattern showcase</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>One instance of every shipped block and pattern. Headings label each entry; dividers separate them. UI shell blocks normally live in template parts (header / sidebar / footer); they appear here for completeness and may look out of context.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/section</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Constrained-width content wrapper with Carbon spacing rhythm and optional background.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/section {"paddingBlock":"06","backgroundColor":"layer-01"} -->
+<!-- wp:paragraph -->
+<p>Inside an awt/section with backgroundColor "layer-01".</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/section -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/icon</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Standalone Carbon icon — decorative by default, accessible name when informative.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/icon {"iconName":"checkmark","size":"24","label":"Success","decorative":false,"color":"support-success"} /-->
+
+<!-- wp:awt/icon {"iconName":"information","size":"24","label":"Info","decorative":false,"color":"support-info"} /-->
+
+<!-- wp:awt/icon {"iconName":"warning","size":"24","label":"Warning","decorative":false,"color":"support-warning"} /-->
+
+<!-- wp:awt/icon {"iconName":"close","size":"24","label":"Error","decorative":false,"color":"support-error"} /-->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/button</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Carbon button — multiple kinds and sizes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/button {"text":"Primary","size":"md"} /-->
+
+<!-- wp:awt/button {"text":"Secondary","kind":"secondary","size":"md"} /-->
+
+<!-- wp:awt/button {"text":"Tertiary","kind":"tertiary","size":"md"} /-->
+
+<!-- wp:awt/button {"text":"Ghost","kind":"ghost","size":"md"} /-->
+
+<!-- wp:awt/button {"text":"Danger","kind":"danger","size":"md"} /-->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/link</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Carbon link variant — distinct from a regular anchor.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/link {"text":"Standalone link","href":"#"} /-->
+
+<!-- wp:awt/link {"text":"Link with arrow","href":"#","iconName":"arrow-right"} /-->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/list + awt/list-item</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Unordered (flat):</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/list -->
+<!-- wp:awt/list-item {"content":"First unordered item"} /-->
+
+<!-- wp:awt/list-item {"content":"Second unordered item"} /-->
+
+<!-- wp:awt/list-item {"content":"Third unordered item"} /-->
+<!-- /wp:awt/list -->
+
+<!-- wp:paragraph -->
+<p><strong>Unordered (nested):</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/list -->
+<!-- wp:awt/list-item {"content":"Fruits"} -->
+<!-- wp:awt/list {"nested":true} -->
+<!-- wp:awt/list-item {"content":"Apple"} /-->
+
+<!-- wp:awt/list-item {"content":"Banana"} /-->
+
+<!-- wp:awt/list-item {"content":"Cherry"} /-->
+<!-- /wp:awt/list -->
+<!-- /wp:awt/list-item -->
+
+<!-- wp:awt/list-item {"content":"Vegetables"} -->
+<!-- wp:awt/list {"nested":true} -->
+<!-- wp:awt/list-item {"content":"Carrot"} /-->
+
+<!-- wp:awt/list-item {"content":"Spinach"} -->
+<!-- wp:awt/list {"nested":true} -->
+<!-- wp:awt/list-item {"content":"Baby spinach"} /-->
+
+<!-- wp:awt/list-item {"content":"Mature spinach"} /-->
+<!-- /wp:awt/list -->
+<!-- /wp:awt/list-item -->
+<!-- /wp:awt/list -->
+<!-- /wp:awt/list-item -->
+<!-- /wp:awt/list -->
+
+<!-- wp:paragraph -->
+<p><strong>Ordered (flat):</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/list {"type":"ordered-native"} -->
+<!-- wp:awt/list-item {"content":"First ordered item"} /-->
+
+<!-- wp:awt/list-item {"content":"Second ordered item"} /-->
+
+<!-- wp:awt/list-item {"content":"Third ordered item"} /-->
+<!-- /wp:awt/list -->
+
+<!-- wp:paragraph -->
+<p><strong>Ordered (Carbon-styled, nested):</strong> outer level shows "1." counter; nested level switches to lower-latin "a." per Carbon's spec.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/list {"type":"ordered"} -->
+<!-- wp:awt/list-item {"content":"Install"} -->
+<!-- wp:awt/list {"type":"ordered","nested":true} -->
+<!-- wp:awt/list-item {"content":"Download the zip"} /-->
+
+<!-- wp:awt/list-item {"content":"Upload via WordPress admin"} /-->
+
+<!-- wp:awt/list-item {"content":"Activate"} /-->
+<!-- /wp:awt/list -->
+<!-- /wp:awt/list-item -->
+
+<!-- wp:awt/list-item {"content":"Configure"} -->
+<!-- wp:awt/list {"type":"ordered","nested":true} -->
+<!-- wp:awt/list-item {"content":"Open the welcome wizard"} /-->
+
+<!-- wp:awt/list-item {"content":"Pick a style variation"} /-->
+
+<!-- wp:awt/list-item {"content":"Pick a header preset"} /-->
+<!-- /wp:awt/list -->
+<!-- /wp:awt/list-item -->
+
+<!-- wp:awt/list-item {"content":"Publish"} /-->
+<!-- /wp:awt/list -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/tag</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Carbon tag — color variants + dismissible (filter) mode.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/tag {"text":"red","type":"red"} /-->
+
+<!-- wp:awt/tag {"text":"blue","type":"blue"} /-->
+
+<!-- wp:awt/tag {"text":"green","type":"green"} /-->
+
+<!-- wp:awt/tag {"text":"purple","type":"purple"} /-->
+
+<!-- wp:awt/tag {"text":"gray"} /-->
+
+<!-- wp:awt/tag {"text":"filter","type":"cool-gray","filter":true} /-->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/breadcrumb + awt/breadcrumb-item</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Default (with trailing slash):</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/breadcrumb {"ariaLabel":"Showcase breadcrumb (with trailing slash)"} -->
+<!-- wp:awt/breadcrumb-item {"text":"Home","href":"/"} /-->
+
+<!-- wp:awt/breadcrumb-item {"text":"Section","href":"/section"} /-->
+
+<!-- wp:awt/breadcrumb-item {"text":"Current page","isCurrentPage":true} /-->
+<!-- /wp:awt/breadcrumb -->
+
+<!-- wp:paragraph -->
+<p><strong>noTrailingSlash:</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/breadcrumb {"noTrailingSlash":true,"ariaLabel":"Showcase breadcrumb (no trailing slash)"} -->
+<!-- wp:awt/breadcrumb-item {"text":"Home","href":"/"} /-->
+
+<!-- wp:awt/breadcrumb-item {"text":"Section","href":"/section"} /-->
+
+<!-- wp:awt/breadcrumb-item {"text":"Current page","isCurrentPage":true} /-->
+<!-- /wp:awt/breadcrumb -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/menu-button</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>WAI-ARIA menu-button pattern via floating-ui. Click to open; outside-click / Escape / Tab close.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/menu-button {"label":"Actions","size":"md","items":[{"label":"Open","value":"open"},{"label":"Duplicate","value":"duplicate"},{"label":"Archive","value":"archive"},{"label":"Delete","value":"delete"}]} /-->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/tooltip</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Hover or focus the trigger. Floating-ui flips + shifts at viewport edges.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/tooltip {"description":"This tooltip uses @floating-ui/dom to flip and shift so it never clips off-screen."} /-->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/toggletip</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Click-not-hover variant. Opens an anchored popover whose content stays visible until dismissed (Escape, click outside, or click the trigger again).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/toggletip {"label":"Definitions","description":"WCAG (Web Content Accessibility Guidelines) is a W3C standard with three conformance levels: A, AA, and AAA. AWT targets WCAG 2.2 AA.","ariaLabel":"Show definition of WCAG","align":"bottom-start"} /-->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/text-input</h2>
+<!-- /wp:heading -->
+
+<!-- wp:awt/text-input {"label":"Email","type":"email","placeholder":"you@example.com","helperText":"We never share your email."} /-->
+
+<!-- wp:awt/text-input {"label":"Username","invalid":true,"invalidText":"This username is taken."} /-->
+
+<!-- wp:awt/text-input {"label":"Domain","value":"example.com","warn":true,"warnText":"Heads up — this domain is already in use elsewhere."} /-->
+
+<!-- wp:awt/text-input {"label":"Read-only field","value":"This value cannot be edited","helperText":"Read-only state — the value is locked.","readonly":true} /-->
+
+<!-- wp:awt/text-input {"label":"Fluid layout","placeholder":"Type something","helperText":"Carbon's fluid variant — label sits inside the field box.","fluid":true} /-->
+
+<!-- wp:awt/text-input {"label":"Inline layout","placeholder":"Sits on the same row as the label","inline":true} /-->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/password-input</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Password field with show/hide visibility toggle. Click the eye to reveal what you typed.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/password-input {"helperText":"At least 8 characters."} /-->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/text-area</h2>
+<!-- /wp:heading -->
+
+<!-- wp:awt/text-area {"label":"Notes","placeholder":"Add anything we should know…","helperText":"Up to ~1000 characters."} /-->
+
+<!-- wp:awt/text-area {"label":"Invalid example","rows":3,"invalid":true,"invalidText":"This field can't be empty."} /-->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/checkbox</h2>
+<!-- /wp:heading -->
+
+<!-- wp:awt/checkbox {"label":"I agree to the terms","name":"agree","value":"yes"} /-->
+
+<!-- wp:awt/checkbox {"label":"Pre-checked option","checked":true} /-->
+
+<!-- wp:awt/checkbox {"label":"Disabled option","disabled":true} /-->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/radio-button-group + awt/radio-button</h2>
+<!-- /wp:heading -->
+
+<!-- wp:awt/radio-button-group {"name":"preference","legend":"Choose a preference","orientation":"vertical"} -->
+<!-- wp:awt/radio-button {"label":"Option A","value":"a","checked":true} /-->
+
+<!-- wp:awt/radio-button {"label":"Option B","value":"b"} /-->
+
+<!-- wp:awt/radio-button {"label":"Option C","value":"c"} /-->
+<!-- /wp:awt/radio-button-group -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/toggle</h2>
+<!-- /wp:heading -->
+
+<!-- wp:awt/toggle {"label":"Enable notifications"} /-->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/form</h2>
+<!-- /wp:heading -->
+
+<!-- wp:awt/form {"legend":"Sign up","description":"All fields required."} -->
+<!-- wp:awt/text-input {"label":"Name","required":true} /-->
+
+<!-- wp:awt/text-input {"label":"Email","type":"email","required":true} /-->
+
+<!-- wp:awt/checkbox {"label":"Subscribe to newsletter"} /-->
+
+<!-- wp:awt/button {"text":"Submit","size":"md"} /-->
+<!-- /wp:awt/form -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/notification</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>High contrast (default):</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/notification {"title":"Info:","subtitle":"a routine status update.","caption":"dasdas","hideCloseButton":true,"variant":"toast"} /-->
+
+<!-- wp:awt/notification {"kind":"success","title":"Success:","subtitle":"the operation completed."} /-->
+
+<!-- wp:awt/notification {"kind":"warning","title":"Warning:","subtitle":"something may need attention."} /-->
+
+<!-- wp:awt/notification {"kind":"error","title":"Error:","subtitle":"the operation failed."} /-->
+
+<!-- wp:paragraph -->
+<p><strong>Low contrast:</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/notification {"title":"Info:","subtitle":"a routine status update.","lowContrast":true} /-->
+
+<!-- wp:awt/notification {"kind":"success","title":"Success:","subtitle":"the operation completed.","lowContrast":true} /-->
+
+<!-- wp:awt/notification {"kind":"warning","title":"Warning:","subtitle":"something may need attention.","lowContrast":true} /-->
+
+<!-- wp:awt/notification {"kind":"error","title":"Error:","subtitle":"the operation failed.","lowContrast":true} /-->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/tile</h2>
+<!-- /wp:heading -->
+
+<!-- wp:awt/tile -->
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Default tile</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A non-interactive content tile.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/tile -->
+
+<!-- wp:awt/tile {"variant":"clickable","href":"#"} -->
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Clickable tile</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Renders as a link.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/tile -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/accordion + awt/accordion-item</h2>
+<!-- /wp:heading -->
+
+<!-- wp:awt/accordion {"singleOpen":true} -->
+<!-- wp:awt/accordion-item {"title":"First section"} -->
+<!-- wp:paragraph -->
+<p>Content of the first accordion section.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/accordion-item -->
+
+<!-- wp:awt/accordion-item {"title":"Second section"} -->
+<!-- wp:paragraph -->
+<p>Single-open mode: opening this closes the others.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/accordion-item -->
+
+<!-- wp:awt/accordion-item {"title":"Third section","disabled":true} -->
+<!-- wp:paragraph -->
+<p>Disabled item.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/accordion-item -->
+<!-- /wp:awt/accordion -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/hero</h2>
+<!-- /wp:heading -->
+
+<!-- wp:awt/hero {"eyebrow":"Marketing primitive","heading":"Hero block","description":"Eyebrow + headline + supporting description + CTA row from inner blocks."} -->
+<!-- wp:awt/button {"text":"Primary action"} /-->
+
+<!-- wp:awt/button {"text":"Secondary","kind":"tertiary"} /-->
+<!-- /wp:awt/hero -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/feature-grid</h2>
+<!-- /wp:heading -->
+
+<!-- wp:awt/feature-grid -->
+<!-- wp:awt/tile -->
+<!-- wp:awt/icon {"iconName":"checkmark","size":"24","label":"Feature one","decorative":false,"color":"support-success"} /-->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Feature one</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Description of feature one.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/tile -->
+
+<!-- wp:awt/tile -->
+<!-- wp:awt/icon {"iconName":"information","size":"24","label":"Feature two","decorative":false,"color":"support-info"} /-->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Feature two</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Description of feature two.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/tile -->
+
+<!-- wp:awt/tile -->
+<!-- wp:awt/icon {"iconName":"launch","size":"24","label":"Feature three","decorative":false,"color":"link-primary"} /-->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Feature three</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Description of feature three.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/tile -->
+<!-- /wp:awt/feature-grid -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">UI shell blocks (normally in template parts)</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The blocks below live in <code>parts/header.html</code>, <code>parts/sidebar.html</code>, and <code>parts/footer.html</code> by default. Shown here for completeness; visuals may look out of context.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">awt/skip-link</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Visually hidden until focused. Tab into it from the address bar to see it.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/skip-link /-->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">awt/header-brand</h3>
+<!-- /wp:heading -->
+
+<!-- wp:awt/header-brand {"kind":"text-with-prefix","prefix":"AWT","siteTitle":"Showcase"} /-->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">awt/header-nav + awt/header-nav-item</h3>
+<!-- /wp:heading -->
+
+<!-- wp:awt/header-nav {"ariaLabel":"Showcase nav"} -->
+<!-- wp:awt/header-nav-item {"text":"Home","href":"/"} /-->
+
+<!-- wp:awt/header-nav-item {"text":"Docs","href":"/docs","matchMode":"prefix"} /-->
+
+<!-- wp:awt/header-nav-item {"text":"About","href":"/about"} /-->
+<!-- /wp:awt/header-nav -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">awt/header-global + awt/header-action</h3>
+<!-- /wp:heading -->
+
+<!-- wp:awt/header-global -->
+<!-- wp:awt/header-action {"panelId":"search-panel"} /-->
+
+<!-- wp:awt/header-action {"iconName":"notification","label":"Notifications","panelId":"notifications-panel"} /-->
+
+<!-- wp:awt/header-action {"iconName":"useru002du002davatar","label":"Account"} /-->
+<!-- /wp:awt/header-global -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">awt/color-scheme-toggle</h3>
+<!-- /wp:heading -->
+
+<!-- wp:awt/color-scheme-toggle /-->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">awt/side-nav + awt/side-nav-section + awt/side-nav-link + awt/side-nav-divider</h3>
+<!-- /wp:heading -->
+
+<!-- wp:awt/side-nav {"ariaLabel":"Showcase side nav","id":"showcase-side-nav"} -->
+<!-- wp:awt/side-nav-section {"title":"Getting started"} -->
+<!-- wp:awt/side-nav-link {"text":"Overview","href":"/overview"} /-->
+
+<!-- wp:awt/side-nav-link {"text":"Install","href":"/install"} /-->
+<!-- /wp:awt/side-nav-section -->
+
+<!-- wp:awt/side-nav-divider /-->
+
+<!-- wp:awt/side-nav-section {"title":"Reference"} -->
+<!-- wp:awt/side-nav-link {"text":"Blocks","href":"/reference/blocks","matchMode":"prefix"} /-->
+
+<!-- wp:awt/side-nav-link {"text":"Patterns","href":"/reference/patterns","matchMode":"prefix"} /-->
+<!-- /wp:awt/side-nav-section -->
+<!-- /wp:awt/side-nav -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">awt/footer-section + awt/footer-link</h3>
+<!-- /wp:heading -->
+
+<!-- wp:awt/footer-section {"title":"Showcase"} -->
+<!-- wp:awt/footer-link {"text":"About","href":"/about"} /-->
+
+<!-- wp:awt/footer-link {"text":"Privacy","href":"/privacy"} /-->
+
+<!-- wp:awt/footer-link {"text":"GitHub","href":"https://github.com/","external":true} /-->
+<!-- /wp:awt/footer-section -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Patterns</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Pre-composed groups of blocks, surfaced in the Site Editor's pattern inserter under <strong>AWT — Sections</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Pattern: awt/hero</h3>
+<!-- /wp:heading -->
+
+<!-- wp:awt/section {"paddingBlock":"10","metadata":{"categories":["awt-section","header"],"patternName":"awt/hero","name":"AWT — Hero"}} -->
+<!-- wp:awt/hero {"eyebrow":"Accessible by default","description":"Carbon Design System components, paired light/dark variants, and a real accessibility commitment — all in a free, GPL-licensed theme."} -->
+<!-- wp:awt/button {"text":"Get started"} /-->
+
+<!-- wp:awt/button {"text":"Read the docs","kind":"tertiary"} /-->
+<!-- /wp:awt/hero -->
+<!-- /wp:awt/section -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Pattern: awt/feature-grid</h3>
+<!-- /wp:heading -->
+
+<!-- wp:awt/section {"paddingBlock":"09","ariaLabel":"Features","metadata":{"categories":["awt-section","text"],"patternName":"awt/feature-grid","name":"AWT — Feature grid (3-up)"}} -->
+<!-- wp:heading {"style":{"typography":{"textAlign":"center"}}} -->
+<h2 class="wp-block-heading has-text-align-center">Why AWT</h2>
+<!-- /wp:heading -->
+
+<!-- wp:awt/feature-grid -->
+<!-- wp:awt/tile -->
+<!-- wp:awt/icon {"iconName":"checkmark","size":"24","label":"Accessible","decorative":false,"color":"support-success"} /-->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Accessible</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Every block ships semantically correct HTML and is validated against WCAG 2.2 AA.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/tile -->
+
+<!-- wp:awt/tile -->
+<!-- wp:awt/icon {"iconName":"information","size":"24","label":"Design system","decorative":false,"color":"support-info"} /-->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Carbon Design System</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Battle-tested visual system from IBM, paired light/dark variants out of the box.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/tile -->
+
+<!-- wp:awt/tile -->
+<!-- wp:awt/icon {"iconName":"launch","size":"24","label":"Free","decorative":false,"color":"link-primary"} /-->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Free, forever</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>GPL-2.0-or-later. No telemetry, no callbacks, no lock-in.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/tile -->
+<!-- /wp:awt/feature-grid -->
+<!-- /wp:awt/section -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Pattern: awt/faq-accordion</h3>
+<!-- /wp:heading -->
+
+<!-- wp:awt/section {"paddingBlock":"09","ariaLabel":"Frequently asked questions","metadata":{"categories":["awt-section","text"],"patternName":"awt/faq-accordion","name":"AWT — FAQ accordion"}} -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Frequently asked questions</h2>
+<!-- /wp:heading -->
+
+<!-- wp:awt/accordion {"singleOpen":true} -->
+<!-- wp:awt/accordion-item {"title":"Is AWT really free?"} -->
+<!-- wp:paragraph -->
+<p>Yes. The theme and the blocks plugin are GPL-2.0-or-later and ship via WordPress.org with no telemetry, no callbacks, and no license keys.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/accordion-item -->
+
+<!-- wp:awt/accordion-item {"title":"What design system does it use?"} -->
+<!-- wp:paragraph -->
+<p>Carbon Design System from IBM. AWT preserves Carbon's class grammar exactly, so anything built against Carbon's CSS works.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/accordion-item -->
+
+<!-- wp:awt/accordion-item {"title":"Does it support dark mode?"} -->
+<!-- wp:paragraph -->
+<p>Yes — visitors switch between paired light and dark Carbon variants via the header toggle. Site owners pick the pairing at design time.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/accordion-item -->
+<!-- /wp:awt/accordion -->
+<!-- /wp:awt/section -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:paragraph {"style":{"typography":{"textAlign":"center"}}} -->
+<p class="has-text-align-center">End of showcase.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/code-snippet</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Inline:</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Run  to compile the plugin.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Single-line:</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/code-snippet {"variant":"single","code":"git clone https://github.com/example/awt.git","language":"shell"} /-->
+
+<!-- wp:paragraph -->
+<p><strong>Multi-line (with copy button):</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/code-snippet {"code":"function greet(name) {n  return `Hello, ${name}!`;n}nnconsole.log(greet('AWT'));","language":"javascript"} /-->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/content-switcher</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Segmented control. Arrow keys navigate; click activates. Use for ≤4 short options.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/content-switcher {"ariaLabel":"View mode"} -->
+<!-- wp:awt/content-switcher-item {"label":"List","value":"list"} /-->
+<!-- wp:awt/content-switcher-item {"label":"Grid","value":"grid"} /-->
+<!-- wp:awt/content-switcher-item {"label":"Timeline","value":"timeline"} /-->
+<!-- wp:awt/content-switcher-panel -->
+<!-- wp:paragraph --><p>List view — records shown as a vertical list.</p><!-- /wp:paragraph -->
+<!-- /wp:awt/content-switcher-panel -->
+<!-- wp:awt/content-switcher-panel -->
+<!-- wp:paragraph --><p>Grid view — records shown as cards in a grid.</p><!-- /wp:paragraph -->
+<!-- /wp:awt/content-switcher-panel -->
+<!-- wp:awt/content-switcher-panel -->
+<!-- wp:paragraph --><p>Timeline view — records shown on a chronological timeline.</p><!-- /wp:paragraph -->
+<!-- /wp:awt/content-switcher-panel -->
+<!-- /wp:awt/content-switcher -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/data-table</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Read-only, sortable, zebra-striped. Click a column header to sort; click again to reverse; third click clears.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/data-table {"headers":[{"key":"name","text":"Name"},{"key":"region","text":"Region"},{"key":"status","text":"Status"},{"key":"requests","text":"Requests (24h)"}],"rows":[{"name":"web-1","region":"us-east","status":"Healthy","requests":"104321"},{"name":"web-2","region":"eu-west","status":"Healthy","requests":"87005"},{"name":"web-3","region":"ap-south","status":"Degraded","requests":"52119"},{"name":"db-primary","region":"us-east","status":"Healthy","requests":"9810"}],"caption":"Servers"} /-->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/dropdown</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Carbon-styled single-select (button + listbox via floating-ui). Use when you want the Carbon UI; use awt/select for native OS dropdown behavior.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/dropdown {"label":"Pick a framework","helperText":"Helper text — pick the framework that matches your stack.","options":[{"value":"react","label":"React"},{"value":"vue","label":"Vue"},{"value":"svelte","label":"Svelte"},{"value":"solid","label":"SolidJS"}]} /-->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/modal + awt/modal-opener</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Click the opener to launch the modal. Escape, backdrop click, or either footer button closes; focus returns to the opener.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/modal-opener {"text":"Open the modal","modalId":"showcase-modal"} /-->
+
+<!-- wp:awt/modal {"id":"showcase-modal","heading":"Confirm deletion","label":"Account settings","primaryAction":"Delete","danger":true} -->
+<!-- wp:paragraph -->
+<p>This will permanently remove your account and all associated data. This action cannot be undone.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/modal -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/pagination</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>On archive / blog templates, leave Total pages = 0 and the block reads <code>$wp_query-&gt;max_num_pages</code> automatically. Below is a static 12-page example.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/pagination {"totalPages":12,"currentPage":4,"baseUrl":"#page-%d"} /-->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/select</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Native HTML select with Carbon styling. The mobile-friendly version of a single-value picker.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:awt/select {"label":"Country","helperText":"Pick your billing country.","options":[{"value":"de","label":"Germany"},{"value":"tr","label":"Türkiye"},{"value":"us","label":"United States"},{"value":"jp","label":"Japan"}]} /-->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">awt/tabs + awt/tab + awt/tab-panel</h2>
+<!-- /wp:heading -->
+
+<!-- wp:awt/tabs {"ariaLabel":"Showcase tabs"} -->
+<!-- wp:awt/tab {"label":"Overview"} /-->
+
+<!-- wp:awt/tab {"label":"Specifications"} /-->
+
+<!-- wp:awt/tab {"label":"Reviews"} /-->
+
+<!-- wp:awt/tab-panel -->
+<!-- wp:paragraph -->
+<p>Specifications panel — second panel <strong>co</strong>ntent.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/tab-panel -->
+
+<!-- wp:awt/tab-panel -->
+<!-- wp:paragraph -->
+<p>Overview panel content. Arrow keys (Left/Right) navigate between tabs and immediately activate the matching panel.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/tab-panel -->
+
+<!-- wp:awt/tab-panel -->
+<!-- wp:paragraph -->
+<p>Reviews panel — third panel content.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/tab-panel -->
+<!-- /wp:awt/tabs -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<p><!-- AWT_STAT_DEMO_v3 --></p>
+
+<!-- wp:awt/section {"paddingBlock":"09","maxWidth":"wide","align":"full"} -->
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:awt/stat {"value":"~90%","description":"completing a full Java uplift in ~3 days as compared to the earlier ~30 days"} /--></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:awt/stat {"value":"1000+","heading":"engineering hours preserved","description":"eliminating manual refactoring and freeing teams for higher value work"} /--></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:awt/stat {"value":"Zero","heading":"post-deployment defects"} /--></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+<!-- /wp:awt/section -->
+
+<p><!-- AWT_TESTIMONIAL_DEMO --></p>
+
+<!-- wp:awt/section {"paddingBlock":"09"} -->
+<!-- wp:awt/testimonial {"quote":"Replace this quote with words a real customer actually said. Keep it short, keep it concrete, and always ask before you attribute.","authorName":"Alex Rivera","authorRole":"Director of Digital Services","authorOrg":"Example Corp"} /-->
+<!-- /wp:awt/section -->
+
+<p><!-- AWT_PRICING_DEMO --></p>
+
+<!-- wp:awt/section {"paddingBlock":"09"} -->
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:awt/pricing-tile {"price":"$2,800","pricePeriod":"/year","description":"Secure data exchange with key customers and suppliers. Start with 1 connection and expand any time.","ctaText":"Choose Essentials","ctaKind":"tertiary"} /--></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:awt/pricing-tile {"tierName":"Standard","price":"$8,400","pricePeriod":"/year","description":"Add real-time event notifications and advanced transformations. Built for growing partner networks.","ctaText":"Choose Standard","featured":true,"badge":"Most popular"} /--></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:awt/pricing-tile {"tierName":"Premium","price":"Custom","description":"Dedicated customer success manager + 24/7 priority support. For enterprise B2B integration needs.","ctaText":"Contact sales","ctaKind":"tertiary"} /--></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:awt/data-table {"headers":[{"key":"feature","text":"Feature","cellType":"text"},{"key":"essentials","text":"Essentials","cellType":"boolean"},{"key":"standard","text":"Standard","cellType":"boolean"},{"key":"premium","text":"Premium","cellType":"boolean"}],"rows":[{"feature":"Secure protocol-based document routing","essentials":true,"standard":true,"premium":true},{"feature":"Support for industry and technical standards","essentials":true,"standard":true,"premium":true},{"feature":"Real-time event notifications","essentials":false,"standard":true,"premium":true},{"feature":"Advanced data transformations","essentials":false,"standard":true,"premium":true},{"feature":"Dedicated customer success manager","essentials":false,"standard":false,"premium":true},{"feature":"24/7 priority support","essentials":false,"standard":false,"premium":true}],"sortable":false,"caption":"Edition options and features"} /-->
+<!-- /wp:awt/section -->
+
+<p><!-- AWT_FAQ_DEMO --></p>
+
+<!-- wp:awt/section {"paddingBlock":"09"} -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Frequently asked questions</h2>
+<!-- /wp:heading -->
+
+<!-- wp:awt/faq-item {"question":"How do I install AWT?"} -->
+<!-- wp:paragraph -->
+<p>Install AWT from the WordPress admin search. The free theme and blocks plugin both live on WordPress.org. Activate the theme, then activate the blocks plugin to get every Carbon component as a real block.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/faq-item -->
+
+<!-- wp:awt/faq-item {"question":"Does AWT work with WooCommerce?"} -->
+<!-- wp:paragraph -->
+<p>AWT runs alongside WooCommerce without breaking. WooCommerce's own templates render with WC default styling at Stage 1. Full Carbon-styled WooCommerce templates are part of AWT Premium.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/faq-item -->
+
+<!-- wp:awt/faq-item {"question":"Can I use my own brand colors?"} -->
+<!-- wp:paragraph -->
+<p>Yes. The Site Editor's palette panel lets you override any Carbon token. Contrast is checked against both light and dark theme scopes so you cannot accidentally ship an inaccessible palette.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:awt/faq-item -->
+<!-- /wp:awt/section -->

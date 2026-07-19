@@ -1,0 +1,90 @@
+/**
+ * IconPicker — editor-only styles.
+ *
+ * The picker lives in the block inspector sidebar, where width is constrained
+ * to ~280px. The default WP inspector layout patterns are designed for narrow
+ * single-column controls, so this picker reflows accordingly:
+ *
+ *   [ chip-style current-icon button (full width)  ]
+ *   [                                              ]   ← Clear button on next line, right-aligned
+ */
+
+.awt-icon-picker__row {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 0.25rem;
+}
+
+/* The current-icon chip — clicking it opens the picker. */
+.awt-icon-picker__current {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 6px 10px;
+	width: 100%;
+	min-block-size: 36px;
+	background: #fff;
+	border: 1px solid #949494;
+	border-radius: 2px;
+	color: #1e1e1e;
+	font: inherit;
+	font-size: 13px;
+	text-align: start;
+	cursor: pointer;
+	transition: border-color 0.1s ease, box-shadow 0.1s ease;
+}
+
+.awt-icon-picker__current:hover {
+	border-color: #1e1e1e;
+}
+
+.awt-icon-picker__current:focus-visible {
+	outline: 2px solid var(--wp-admin-theme-color, #2271b1);
+	outline-offset: 0;
+	border-color: var(--wp-admin-theme-color, #2271b1);
+}
+
+/* Icon preview thumb (24×24). When empty, a subtle placeholder block. */
+.awt-icon-picker__thumb {
+	flex-shrink: 0;
+	width: 24px;
+	height: 24px;
+	display: block;
+	color: currentColor;
+}
+
+.awt-icon-picker__thumb--empty {
+	background: #f0f0f0;
+	border-radius: 2px;
+}
+
+/* The icon token name (e.g. arrow--right). Truncates if too long. */
+.awt-icon-picker__name {
+	flex: 1 1 auto;
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+	font-size: 12px;
+	color: #1e1e1e;
+}
+
+.awt-icon-picker__current:has(.awt-icon-picker__thumb--empty) .awt-icon-picker__name {
+	color: #757575;
+	font-style: italic;
+	font-family: inherit;
+}
+
+/* Chevron at the trailing edge — indicates this is a dropdown trigger. */
+.awt-icon-picker__chevron {
+	flex-shrink: 0;
+	color: #757575;
+	font-size: 10px;
+}
+
+/* The Clear button when an icon is set — right-aligned under the chip. */
+.awt-icon-picker__clear {
+	align-self: flex-end;
+}

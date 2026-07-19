@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/tabs",
+	"carbonStyles": [
+		"tabs"
+	],
+	"awt_component": "tabs",
+	"title": "Tabs",
+	"category": "awt-navigation",
+	"description": "Tabs that switch between content panels. Add matching pairs of Tab and Tab panel blocks.",
+	"textdomain": "awt",
+	"keywords": [
+		"tabs",
+		"navigation",
+		"carbon"
+	],
+	"providesContext": {
+		"awt/tabs/orientation": "orientation"
+	},
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"orientation": {
+			"type": "string",
+			"default": "horizontal"
+		},
+		"ariaLabel": {
+			"type": "string",
+			"default": "Tabs"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

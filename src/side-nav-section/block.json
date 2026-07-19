@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/side-nav-section",
+	"carbonStyles": [],
+	"awt_component": "side-nav",
+	"title": "Side nav section",
+	"category": "awt-ui-shell",
+	"parent": [
+		"awt/side-nav"
+	],
+	"description": "Collapsible group of side-nav links with an optional heading.",
+	"textdomain": "awt",
+	"keywords": [
+		"side nav",
+		"section",
+		"group"
+	],
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"className": true,
+		"anchor": false
+	},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"defaultExpanded": {
+			"type": "boolean",
+			"default": true
+		},
+		"iconName": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

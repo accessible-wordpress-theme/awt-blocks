@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/pagination",
+	"carbonStyles": [
+		"pagination-nav"
+	],
+	"awt_component": "pagination",
+	"title": "Pagination",
+	"category": "awt-navigation",
+	"description": "Page navigation with numbered pages and previous/next controls. On blog, category, and search pages it works out the page count and current page for you.",
+	"textdomain": "awt",
+	"keywords": [
+		"pagination",
+		"pages",
+		"carbon",
+		"archive"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"totalPages": {
+			"type": "number",
+			"default": 0
+		},
+		"currentPage": {
+			"type": "number",
+			"default": 1
+		},
+		"baseUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"ariaLabel": {
+			"type": "string",
+			"default": "Pagination"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

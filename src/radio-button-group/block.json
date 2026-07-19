@@ -1,0 +1,67 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/radio-button-group",
+	"carbonStyles": [
+		"radio-button",
+		"form"
+	],
+	"awt_component": "radio",
+	"title": "Radio button group",
+	"category": "awt-forms",
+	"description": "A group of radio buttons with a shared label, so only one option can be chosen.",
+	"textdomain": "awt",
+	"keywords": [
+		"radio",
+		"form",
+		"fieldset",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"name": {
+			"type": "string",
+			"default": ""
+		},
+		"legend": {
+			"type": "string",
+			"default": "Select an option"
+		},
+		"orientation": {
+			"type": "string",
+			"default": "horizontal"
+		},
+		"labelPosition": {
+			"type": "string",
+			"default": "right"
+		},
+		"helperText": {
+			"type": "string",
+			"default": ""
+		},
+		"invalid": {
+			"type": "boolean",
+			"default": false
+		},
+		"invalidText": {
+			"type": "string",
+			"default": ""
+		},
+		"required": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"providesContext": {
+		"awt/radioGroupName": "name",
+		"awt/radioGroupRequired": "required"
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

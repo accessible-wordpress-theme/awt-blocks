@@ -1,0 +1,82 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/button",
+	"carbonStyles": [
+		"button"
+	],
+	"awt_component": "button",
+	"title": "Button",
+	"category": "awt-forms",
+	"description": "A button. Use it to trigger an action, or set a URL to turn it into a link.",
+	"textdomain": "awt",
+	"keywords": [
+		"button",
+		"carbon",
+		"cta",
+		"action"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"text": {
+			"type": "string",
+			"default": "Button",
+			"role": "content"
+		},
+		"kind": {
+			"type": "string",
+			"default": "primary"
+		},
+		"size": {
+			"type": "string",
+			"default": "lg"
+		},
+		"type": {
+			"type": "string",
+			"default": "button"
+		},
+		"href": {
+			"type": "string",
+			"default": "",
+			"role": "content"
+		},
+		"target": {
+			"type": "string",
+			"default": "",
+			"role": "content"
+		},
+		"rel": {
+			"type": "string",
+			"default": "",
+			"role": "content"
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"iconName": {
+			"type": "string",
+			"default": ""
+		},
+		"iconPosition": {
+			"type": "string",
+			"default": "trailing"
+		},
+		"isExpressive": {
+			"type": "boolean",
+			"default": false
+		},
+		"onClickFunction": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

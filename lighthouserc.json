@@ -1,0 +1,22 @@
+{
+	"ci": {
+		"collect": {
+			"numberOfRuns": 2,
+			"settings": {
+				"onlyCategories": [ "performance" ],
+				"chromeFlags": "--headless=new"
+			}
+		},
+		"assert": {
+			"assertions": {
+				"cumulative-layout-shift": [ "error", { "maxNumericValue": 0.1 } ],
+				"total-blocking-time": [ "error", { "maxNumericValue": 200 } ],
+				"largest-contentful-paint": [ "error", { "maxNumericValue": 3800 } ]
+			}
+		}
+	},
+	"_awt_notes": {
+		"lcp": "Spec target is 2500 ms. The current ratchet (3800) holds the measured baseline — representative page LCP ≈ 3.0-3.5 ms under Lighthouse's simulated Slow-4G mobile profile, dominated by theme.css raw parse+transfer. Tighten toward 2500 when theme.css splits per-block (Stage 1.x follow-up recorded in the spec).",
+		"inp": "INP is a field metric and cannot be measured in a lab run; total-blocking-time is the lab proxy (spec INP ≤ 200 ms → TBT ≤ 200 ms)."
+	}
+}

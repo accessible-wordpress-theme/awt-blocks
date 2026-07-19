@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/header-brand",
+	"carbonStyles": [],
+	"awt_component": "header-brand",
+	"title": "Header brand",
+	"category": "awt-ui-shell",
+	"description": "Your site name, with an optional prefix and/or logo, linking to your home page.",
+	"textdomain": "awt",
+	"keywords": [
+		"header",
+		"brand",
+		"logo",
+		"site title",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"className": true,
+		"anchor": false
+	},
+	"attributes": {
+		"kind": {
+			"type": "string",
+			"default": ""
+		},
+		"prefix": {
+			"type": "string",
+			"default": ""
+		},
+		"siteTitle": {
+			"type": "string",
+			"default": ""
+		},
+		"logoUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"logoUrlDark": {
+			"type": "string",
+			"default": ""
+		},
+		"logoAlt": {
+			"type": "string",
+			"default": ""
+		},
+		"href": {
+			"type": "string",
+			"default": "/"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

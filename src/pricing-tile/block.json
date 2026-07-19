@@ -1,0 +1,77 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/pricing-tile",
+	"carbonStyles": [
+		"button"
+	],
+	"title": "Pricing tile",
+	"category": "awt-section",
+	"description": "A selectable pricing tile with a plan name, optional price, short description, and a call-to-action. Put feature comparisons in a separate Data table below, not inside the tile. A card-with-features style is available in AWT Premium.",
+	"textdomain": "awt",
+	"keywords": [
+		"pricing",
+		"tile",
+		"plan",
+		"tier",
+		"edition"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"tierName": {
+			"type": "string",
+			"default": "Essentials",
+			"role": "content"
+		},
+		"price": {
+			"type": "string",
+			"default": "",
+			"role": "content"
+		},
+		"pricePeriod": {
+			"type": "string",
+			"default": "",
+			"role": "content"
+		},
+		"description": {
+			"type": "string",
+			"default": "",
+			"role": "content"
+		},
+		"ctaText": {
+			"type": "string",
+			"default": "Get started",
+			"role": "content"
+		},
+		"ctaHref": {
+			"type": "string",
+			"default": "#",
+			"role": "content"
+		},
+		"ctaKind": {
+			"type": "string",
+			"default": "primary"
+		},
+		"featured": {
+			"type": "boolean",
+			"default": false
+		},
+		"badge": {
+			"type": "string",
+			"default": "",
+			"role": "content"
+		},
+		"selectable": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

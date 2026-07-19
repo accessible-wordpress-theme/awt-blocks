@@ -1,0 +1,23 @@
+{
+	"name": "awt/awt-blocks",
+	"description": "AWT blocks plugin — development dependencies (coding standards).",
+	"license": "GPL-2.0-or-later",
+	"require-dev": {
+		"wp-coding-standards/wpcs": "^3.2",
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.1",
+		"phpunit/phpunit": "^9.6",
+		"yoast/phpunit-polyfills": "^2"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		},
+		"platform": {
+			"php": "8.1.99"
+		}
+	},
+	"scripts": {
+		"lint:php": "phpcs",
+		"fix:php": "phpcbf"
+	}
+}

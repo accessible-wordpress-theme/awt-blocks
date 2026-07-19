@@ -1,0 +1,47 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/accordion",
+	"carbonStyles": [
+		"accordion"
+	],
+	"awt_component": "accordion",
+	"title": "Accordion",
+	"category": "awt-data-display",
+	"description": "An accordion — a vertical stack of expandable sections. Add Accordion item blocks inside it.",
+	"textdomain": "awt",
+	"keywords": [
+		"accordion",
+		"collapsible",
+		"expander",
+		"carbon"
+	],
+	"providesContext": {
+		"awt/accordion/align": "align",
+		"awt/accordion/size": "size",
+		"awt/accordion/singleOpen": "singleOpen"
+	},
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "end"
+		},
+		"size": {
+			"type": "string",
+			"default": "md"
+		},
+		"singleOpen": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

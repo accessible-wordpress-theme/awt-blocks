@@ -1,0 +1,34 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/footer-section",
+	"carbonStyles": [],
+	"awt_component": "footer",
+	"title": "Footer section",
+	"category": "awt-ui-shell",
+	"description": "A column of footer links with an optional heading. Several sections arrange into a responsive grid.",
+	"textdomain": "awt",
+	"keywords": [
+		"footer",
+		"column",
+		"links"
+	],
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"className": true,
+		"anchor": false
+	},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"iconName": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

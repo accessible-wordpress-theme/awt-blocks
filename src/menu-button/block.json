@@ -1,0 +1,70 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/menu-button",
+	"carbonStyles": [
+		"menu-button",
+		"menu",
+		"button"
+	],
+	"awt_component": "menu-button",
+	"title": "Menu button",
+	"category": "awt-navigation",
+	"description": "A button that opens a menu of options.",
+	"textdomain": "awt",
+	"keywords": [
+		"menu",
+		"dropdown",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true,
+		"interactivity": true
+	},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Menu"
+		},
+		"kind": {
+			"type": "string",
+			"default": "primary"
+		},
+		"size": {
+			"type": "string",
+			"default": "lg"
+		},
+		"menuAlignment": {
+			"type": "string",
+			"default": "bottom"
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"label": "First action",
+					"value": "first"
+				},
+				{
+					"label": "Second action",
+					"value": "second"
+				},
+				{
+					"label": "Third action",
+					"value": "third"
+				}
+			]
+		}
+	},
+	"editorScript": "file:./index.js",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

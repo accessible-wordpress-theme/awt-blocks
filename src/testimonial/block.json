@@ -1,0 +1,78 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/testimonial",
+	"carbonStyles": [],
+	"title": "Testimonial",
+	"category": "awt-section",
+	"description": "A quote with attribution, styled for emphasis and marked up correctly as a quotation.",
+	"textdomain": "awt",
+	"keywords": [
+		"quote",
+		"testimonial",
+		"blockquote",
+		"case study"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true,
+		"align": [
+			"wide",
+			"full"
+		]
+	},
+	"attributes": {
+		"quote": {
+			"type": "string",
+			"default": "",
+			"role": "content"
+		},
+		"authorName": {
+			"type": "string",
+			"default": "",
+			"role": "content"
+		},
+		"authorRole": {
+			"type": "string",
+			"default": "",
+			"role": "content"
+		},
+		"authorOrg": {
+			"type": "string",
+			"default": "",
+			"role": "content"
+		},
+		"authorAvatarUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"authorAvatarAlt": {
+			"type": "string",
+			"default": ""
+		},
+		"markStyle": {
+			"type": "string",
+			"default": "double-curved"
+		},
+		"quoteSize": {
+			"type": "string",
+			"default": "lg"
+		},
+		"attributionStyle": {
+			"type": "string",
+			"default": "stacked"
+		},
+		"kind": {
+			"type": "string",
+			"default": "plain"
+		},
+		"align": {
+			"type": "string",
+			"default": "start"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

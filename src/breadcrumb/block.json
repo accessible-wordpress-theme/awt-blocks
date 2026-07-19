@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/breadcrumb",
+	"carbonStyles": [
+		"breadcrumb",
+		"link"
+	],
+	"awt_component": "breadcrumb",
+	"title": "Breadcrumb",
+	"category": "awt-navigation",
+	"description": "A breadcrumb trail showing where the current page sits in your site. The last item marks the current page.",
+	"textdomain": "awt",
+	"keywords": [
+		"breadcrumb",
+		"navigation",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"noTrailingSlash": {
+			"type": "boolean",
+			"default": false
+		},
+		"ariaLabel": {
+			"type": "string",
+			"default": "Breadcrumb"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

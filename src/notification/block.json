@@ -1,0 +1,61 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/notification",
+	"carbonStyles": [
+		"notification"
+	],
+	"awt_component": "notification",
+	"title": "Notification",
+	"category": "awt-feedback",
+	"description": "A notification message, shown inline or as a pop-up toast. Screen readers announce it automatically.",
+	"textdomain": "awt",
+	"keywords": [
+		"notification",
+		"alert",
+		"banner",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"kind": {
+			"type": "string",
+			"default": "info"
+		},
+		"title": {
+			"type": "string",
+			"default": "Notification",
+			"role": "content"
+		},
+		"subtitle": {
+			"type": "string",
+			"default": "",
+			"role": "content"
+		},
+		"caption": {
+			"type": "string",
+			"default": "",
+			"role": "content"
+		},
+		"lowContrast": {
+			"type": "boolean",
+			"default": false
+		},
+		"hideCloseButton": {
+			"type": "boolean",
+			"default": false
+		},
+		"variant": {
+			"type": "string",
+			"default": "inline"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

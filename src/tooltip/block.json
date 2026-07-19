@@ -1,0 +1,57 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/tooltip",
+	"carbonStyles": [
+		"tooltip",
+		"popover"
+	],
+	"awt_component": "tooltip",
+	"title": "Tooltip",
+	"category": "awt-feedback",
+	"description": "Wraps text, an icon, or a button and shows a short hint when a visitor hovers over or focuses it.",
+	"textdomain": "awt",
+	"keywords": [
+		"tooltip",
+		"hint",
+		"popover",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true,
+		"interactivity": true
+	},
+	"attributes": {
+		"description": {
+			"type": "string",
+			"default": "Tooltip text"
+		},
+		"align": {
+			"type": "string",
+			"default": "top"
+		},
+		"defaultOpen": {
+			"type": "boolean",
+			"default": false
+		},
+		"enterDelayMs": {
+			"type": "number",
+			"default": 100
+		},
+		"leaveDelayMs": {
+			"type": "number",
+			"default": 300
+		},
+		"triggerText": {
+			"type": "string",
+			"default": "Hover me"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

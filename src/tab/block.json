@@ -1,0 +1,32 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/tab",
+	"carbonStyles": [],
+	"awt_component": "tabs",
+	"title": "Tab",
+	"category": "awt-navigation",
+	"parent": [
+		"awt/tabs"
+	],
+	"description": "One tab button. It pairs by position with the matching Tab panel.",
+	"textdomain": "awt",
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"className": true,
+		"inserter": true
+	},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Tab"
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,61 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/code-snippet",
+	"carbonStyles": [
+		"code-snippet",
+		"copy-button"
+	],
+	"awt_component": "code-snippet",
+	"title": "Code snippet",
+	"category": "awt-content",
+	"description": "A styled code snippet with a copy button — inline, single-line, or multi-line. Use the standard Code block for plain code; use this when you want the styling and click-to-copy.",
+	"textdomain": "awt",
+	"keywords": [
+		"code",
+		"snippet",
+		"copy",
+		"monospace",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"variant": {
+			"type": "string",
+			"default": "multi"
+		},
+		"code": {
+			"type": "string",
+			"default": "echo 'Hello, world.';"
+		},
+		"language": {
+			"type": "string",
+			"default": ""
+		},
+		"showCopyBtn": {
+			"type": "boolean",
+			"default": true
+		},
+		"copyLabel": {
+			"type": "string",
+			"default": "Copy"
+		},
+		"copiedLabel": {
+			"type": "string",
+			"default": "Copied"
+		},
+		"hideCopyBtn": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"editorScript": "file:./index.js",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

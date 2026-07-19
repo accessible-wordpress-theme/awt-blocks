@@ -1,0 +1,181 @@
+/**
+ * AWT editor-wide styles (linter sidebar + pre-publish list).
+ * Compiled by @wordpress/scripts to build/index.css.
+ */
+
+.awt-linter {
+	padding: 16px;
+
+	&__summary {
+		margin: 0 0 12px;
+		font-weight: 600;
+
+		&--error {
+			color: #da1e28; // Carbon text-error
+		}
+		&--warning {
+			color: #8a6d00; // accessible amber on white
+		}
+	}
+
+	&__empty {
+		margin: 0;
+		color: #24a148; // Carbon support-success
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__item {
+		display: grid;
+		gap: 2px;
+		padding: 12px 0;
+		border-block-end: 1px solid #e0e0e0; // Carbon border-subtle
+	}
+
+	&__sev {
+		font-size: 11px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+
+		&--error {
+			color: #da1e28; // Carbon text-error
+		}
+		&--warning {
+			color: #8a6d00; // accessible amber on white
+		}
+		&--info {
+			color: #0043ce; // Carbon link-secondary
+		}
+	}
+
+	&__title {
+		font-weight: 600;
+		line-height: 1.4; // titles can wrap to two lines; keep them readable
+	}
+
+	&__desc {
+		color: #525252; // Carbon text-secondary
+		font-size: 12px;
+		line-height: 1.4;
+	}
+
+	&__goto {
+		justify-self: start;
+		height: auto;
+		padding: 0;
+		margin-block-start: 4px;
+	}
+}
+
+// Pre-publish panel reuses the same list without the outer 16px wrapper.
+.editor-post-publish-panel .awt-linter__list {
+	padding: 0;
+}
+
+// Per-block toolbar indicator — color the icon by highest severity.
+.awt-a11y-toolbar {
+	&--error svg {
+		fill: #da1e28;
+	}
+	&--warning svg {
+		fill: #8a6d00;
+	}
+	&--info svg {
+		fill: #0043ce;
+	}
+}
+
+// §4 Part 3 — color contrast preview, rendered into the block Color panel.
+.awt-contrast {
+	// The color ToolsPanel lays its items in a 2-column grid; without this our
+	// section lands in one ~116px cell and wraps hard. Span the full width.
+	grid-column: 1 / -1;
+	margin-block-start: 12px;
+
+	&__ratio {
+		margin: 0 0 6px;
+		font-size: 13px;
+		line-height: 1.5;
+	}
+	&__badges {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6px;
+		// Gap before the warning text. Set on this <div> (not the <p> warn's
+		// margin-top, which Gutenberg's inspector resets to 0 with higher
+		// specificity) so it reliably applies.
+		margin-block-end: 16px;
+	}
+	&__badge {
+		font-size: 11px;
+		font-weight: 700;
+		padding: 2px 6px;
+		border-radius: 10px;
+
+		&--pass {
+			background: #defbe6;
+			color: #0e6027;
+		}
+		&--fail {
+			background: #fff1f1;
+			color: #da1e28;
+		}
+	}
+	&__warn {
+		// Regular inspector text color (not a brown), roomy line-height, and
+		// full panel width. (Separation from the badges row is the badges'
+		// margin-block-end — the inspector zeroes <p> margin-top.)
+		margin: 0;
+		font-size: 13px;
+		line-height: 1.5;
+		color: inherit;
+	}
+}
+
+// WordPress core's own contrast notice that appears in the color panel at low
+// contrast — match the inspector's block-description font size with a more
+// generous line-height for readability.
+.block-editor-contrast-checker {
+	.components-notice__content,
+	p {
+		font-size: 13px;
+		line-height: 1.6;
+	}
+}
+
+// Top-bar badge — count overlay on the pinned accessibility icon.
+.awt-linter-icon {
+	position: relative;
+	display: inline-flex;
+
+	&__badge {
+		position: absolute;
+		inset-block-start: -3px;
+		inset-inline-end: -7px;
+		min-width: 15px;
+		height: 15px;
+		padding: 0 3px;
+		box-sizing: border-box;
+		border-radius: 8px;
+		font-size: 9px;
+		font-weight: 700;
+		line-height: 15px;
+		text-align: center;
+		color: #fff;
+
+		&--error {
+			background: #da1e28;
+		}
+		&--warning {
+			background: #8a6d00;
+		}
+		&--info {
+			background: #0043ce;
+		}
+	}
+}

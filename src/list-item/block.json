@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/list-item",
+	"carbonStyles": [],
+	"awt_component": "list",
+	"title": "List item",
+	"category": "awt-content",
+	"description": "Item inside an AWT List. May contain a nested awt/list for sub-items.",
+	"textdomain": "awt",
+	"parent": [
+		"awt/list"
+	],
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"className": false,
+		"inserter": true
+	},
+	"attributes": {
+		"content": {
+			"type": "string",
+			"default": "Item"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

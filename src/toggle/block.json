@@ -1,0 +1,67 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/toggle",
+	"carbonStyles": [
+		"toggle"
+	],
+	"awt_component": "toggle",
+	"title": "Toggle",
+	"category": "awt-forms",
+	"description": "An on/off switch for a single setting.",
+	"textdomain": "awt",
+	"keywords": [
+		"toggle",
+		"switch",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true,
+		"interactivity": true
+	},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Toggle label"
+		},
+		"name": {
+			"type": "string",
+			"default": ""
+		},
+		"size": {
+			"type": "string",
+			"default": "md"
+		},
+		"toggled": {
+			"type": "boolean",
+			"default": false
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"readonly": {
+			"type": "boolean",
+			"default": false
+		},
+		"labelA": {
+			"type": "string",
+			"default": "Off"
+		},
+		"labelB": {
+			"type": "string",
+			"default": "On"
+		},
+		"hideLabel": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"editorScript": "file:./index.js",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

@@ -1,0 +1,47 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/header-action",
+	"carbonStyles": [],
+	"awt_component": "header-action",
+	"title": "Header action",
+	"category": "awt-ui-shell",
+	"description": "A square icon button for the header. It can open a panel, link to a page, or run a simple click action.",
+	"textdomain": "awt",
+	"keywords": [
+		"header",
+		"action",
+		"icon button"
+	],
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"className": true,
+		"anchor": false
+	},
+	"attributes": {
+		"iconName": {
+			"type": "string",
+			"default": "search"
+		},
+		"label": {
+			"type": "string",
+			"default": "Search"
+		},
+		"href": {
+			"type": "string",
+			"default": ""
+		},
+		"panelId": {
+			"type": "string",
+			"default": ""
+		},
+		"kind": {
+			"type": "string",
+			"default": "icon-only"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php"
+}

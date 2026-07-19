@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/accordion-item",
+	"carbonStyles": [],
+	"awt_component": "accordion",
+	"title": "Accordion item",
+	"category": "awt-data-display",
+	"parent": [
+		"awt/accordion"
+	],
+	"description": "One expandable section inside an accordion.",
+	"textdomain": "awt",
+	"keywords": [
+		"accordion",
+		"collapsible",
+		"section"
+	],
+	"usesContext": [
+		"awt/accordion/singleOpen"
+	],
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Section",
+			"role": "content"
+		},
+		"defaultExpanded": {
+			"type": "boolean",
+			"default": false
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"editorScript": "file:./index.js",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php"
+}

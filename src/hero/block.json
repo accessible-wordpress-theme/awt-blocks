@@ -1,0 +1,70 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/hero",
+	"carbonStyles": [],
+	"title": "Hero",
+	"category": "awt-section",
+	"description": "Large heading + supporting text + call-to-action. Foundation block for marketing pages.",
+	"textdomain": "awt",
+	"keywords": [
+		"hero",
+		"banner",
+		"marketing",
+		"headline"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true,
+		"align": [
+			"wide",
+			"full"
+		]
+	},
+	"attributes": {
+		"version": {
+			"type": "number",
+			"default": 1
+		},
+		"eyebrow": {
+			"type": "string",
+			"default": ""
+		},
+		"heading": {
+			"type": "string",
+			"default": "Build accessible WordPress sites"
+		},
+		"headingLevel": {
+			"type": "number",
+			"default": 1
+		},
+		"description": {
+			"type": "string",
+			"default": "Carbon Design System components, paired light/dark, accessible by default."
+		},
+		"layout": {
+			"type": "string",
+			"default": "text-only"
+		},
+		"imageUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"imageAlt": {
+			"type": "string",
+			"default": ""
+		},
+		"imageRatio": {
+			"type": "string",
+			"default": ""
+		},
+		"imageWidth": {
+			"type": "string",
+			"default": "equal"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

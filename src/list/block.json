@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/list",
+	"carbonStyles": [
+		"list"
+	],
+	"awt_component": "list",
+	"title": "List",
+	"category": "awt-content",
+	"description": "A list — bulleted, numbered, or styled numbered.",
+	"textdomain": "awt",
+	"keywords": [
+		"list",
+		"ul",
+		"ol",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"type": {
+			"type": "string",
+			"default": "unordered"
+		},
+		"isExpressive": {
+			"type": "boolean",
+			"default": false
+		},
+		"nested": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

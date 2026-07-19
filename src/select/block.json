@@ -1,0 +1,88 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/select",
+	"carbonStyles": [
+		"select",
+		"form"
+	],
+	"awt_component": "select",
+	"title": "Select",
+	"category": "awt-forms",
+	"description": "A styled native dropdown. Best on mobile and in standard forms. Use the Dropdown block for a richer custom interface.",
+	"textdomain": "awt",
+	"keywords": [
+		"select",
+		"dropdown",
+		"form",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Select"
+		},
+		"name": {
+			"type": "string",
+			"default": ""
+		},
+		"helperText": {
+			"type": "string",
+			"default": ""
+		},
+		"invalid": {
+			"type": "boolean",
+			"default": false
+		},
+		"invalidText": {
+			"type": "string",
+			"default": ""
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"required": {
+			"type": "boolean",
+			"default": false
+		},
+		"size": {
+			"type": "string",
+			"default": "md"
+		},
+		"hideLabel": {
+			"type": "boolean",
+			"default": false
+		},
+		"placeholder": {
+			"type": "string",
+			"default": "Choose…"
+		},
+		"options": {
+			"type": "array",
+			"default": [
+				{
+					"value": "option-1",
+					"label": "Option 1"
+				},
+				{
+					"value": "option-2",
+					"label": "Option 2"
+				},
+				{
+					"value": "option-3",
+					"label": "Option 3"
+				}
+			]
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

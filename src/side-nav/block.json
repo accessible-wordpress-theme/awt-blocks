@@ -1,0 +1,47 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/side-nav",
+	"carbonStyles": [],
+	"awt_component": "side-nav",
+	"title": "Side nav",
+	"category": "awt-ui-shell",
+	"description": "A sidebar navigation menu. Add side-nav sections, links, and dividers inside it.",
+	"textdomain": "awt",
+	"keywords": [
+		"side nav",
+		"navigation",
+		"drawer",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"className": true,
+		"anchor": false
+	},
+	"attributes": {
+		"ariaLabel": {
+			"type": "string",
+			"default": "Side navigation"
+		},
+		"defaultExpanded": {
+			"type": "boolean",
+			"default": true
+		},
+		"togglable": {
+			"type": "boolean",
+			"default": false
+		},
+		"mode": {
+			"type": "string",
+			"default": "persistent"
+		},
+		"id": {
+			"type": "string",
+			"default": "side-nav"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

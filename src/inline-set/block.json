@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/inline-set",
+	"carbonStyles": [
+		"button"
+	],
+	"title": "Inline set",
+	"category": "awt-section",
+	"description": "A container that lays out buttons, tags, icons, or links in a row with even spacing.",
+	"textdomain": "awt",
+	"keywords": [
+		"button set",
+		"group",
+		"row",
+		"stack",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"orientation": {
+			"type": "string",
+			"default": "horizontal"
+		},
+		"gap": {
+			"type": "string",
+			"default": "md"
+		},
+		"align": {
+			"type": "string",
+			"default": "start"
+		},
+		"wrap": {
+			"type": "boolean",
+			"default": true
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

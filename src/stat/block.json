@@ -1,0 +1,50 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/stat",
+	"carbonStyles": [],
+	"title": "Statistic",
+	"category": "awt-section",
+	"description": "A large statistic number with a heading and optional description — good for highlighting key figures.",
+	"textdomain": "awt",
+	"keywords": [
+		"stat",
+		"statistic",
+		"metric",
+		"number",
+		"kpi"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"value": {
+			"type": "string",
+			"default": "90%",
+			"role": "content"
+		},
+		"heading": {
+			"type": "string",
+			"default": "faster delivery",
+			"role": "content"
+		},
+		"description": {
+			"type": "string",
+			"default": "",
+			"role": "content"
+		},
+		"level": {
+			"type": "string",
+			"default": "none"
+		},
+		"align": {
+			"type": "string",
+			"default": "start"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

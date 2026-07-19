@@ -1,0 +1,49 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/toggletip",
+	"carbonStyles": [
+		"toggletip",
+		"popover"
+	],
+	"awt_component": "toggletip",
+	"title": "Toggletip",
+	"category": "awt-feedback",
+	"description": "An info button that opens a small pop-up on click. Use it when the extra content needs to stay visible — for example links or longer text — instead of the hover Tooltip.",
+	"textdomain": "awt",
+	"keywords": [
+		"toggletip",
+		"tooltip",
+		"popover",
+		"info",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": ""
+		},
+		"description": {
+			"type": "string",
+			"default": "Additional context shown on click."
+		},
+		"ariaLabel": {
+			"type": "string",
+			"default": "More information"
+		},
+		"align": {
+			"type": "string",
+			"default": "bottom"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

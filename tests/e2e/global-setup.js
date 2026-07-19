@@ -1,0 +1,20 @@
+/**
+ * Playwright global setup: log into the wp-env tests site once and persist
+ * the authenticated browser state for all specs (same wiring Gutenberg uses).
+ */
+
+const { request } = require( '@playwright/test' );
+const { RequestUtils } = require( '@wordpress/e2e-test-utils-playwright' );
+
+module.exports = async function globalSetup( config ) {
+	const { storageState, baseURL } = config.projects[ 0 ].use;
+	const storageStatePath =
+		typeof storageState === 'string' ? storageState : undefined;
+
+	const requestContext = await request.newContext( { baseURL } );
+	const requestUtils = new RequestUtils( requestContext, {
+		storageStatePath,
+	} );
+	await requestUtils.setupRest();
+	await requestContext.dispose();
+};

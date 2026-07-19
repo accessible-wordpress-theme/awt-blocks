@@ -1,0 +1,49 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/faq-item",
+	"carbonStyles": [
+		"accordion"
+	],
+	"awt_component": "accordion",
+	"title": "FAQ question",
+	"category": "awt-section",
+	"description": "A single question and answer that expands on click. Works like an accordion item, but also adds FAQ data that can help your questions appear in Google search results.",
+	"textdomain": "awt",
+	"keywords": [
+		"faq",
+		"question",
+		"answer",
+		"disclosure",
+		"schema"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"question": {
+			"type": "string",
+			"default": "Question?",
+			"role": "content"
+		},
+		"answer": {
+			"type": "string",
+			"default": ""
+		},
+		"defaultExpanded": {
+			"type": "boolean",
+			"default": false
+		},
+		"level": {
+			"type": "string",
+			"default": "3"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

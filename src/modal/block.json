@@ -1,0 +1,76 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/modal",
+	"carbonStyles": [
+		"modal",
+		"button"
+	],
+	"awt_component": "modal",
+	"title": "Modal",
+	"category": "awt-feedback",
+	"description": "A pop-up dialog, hidden until opened by a Modal opener block. Keyboard focus stays inside it, Escape closes it, and focus returns to the button that opened it.",
+	"textdomain": "awt",
+	"keywords": [
+		"modal",
+		"dialog",
+		"overlay",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"id": {
+			"type": "string",
+			"default": "awt-modal"
+		},
+		"heading": {
+			"type": "string",
+			"default": "Modal heading"
+		},
+		"label": {
+			"type": "string",
+			"default": ""
+		},
+		"size": {
+			"type": "string",
+			"default": "md"
+		},
+		"primaryAction": {
+			"type": "string",
+			"default": "Continue"
+		},
+		"secondaryAction": {
+			"type": "string",
+			"default": "Cancel"
+		},
+		"danger": {
+			"type": "boolean",
+			"default": false
+		},
+		"primaryHref": {
+			"type": "string",
+			"default": ""
+		},
+		"primaryTarget": {
+			"type": "string",
+			"default": ""
+		},
+		"primaryRel": {
+			"type": "string",
+			"default": ""
+		},
+		"onClickFunction": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"editorScript": "file:./index.js",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

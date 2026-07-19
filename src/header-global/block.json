@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/header-global",
+	"carbonStyles": [],
+	"awt_component": "header-global",
+	"title": "Header global actions",
+	"category": "awt-ui-shell",
+	"description": "A right-aligned container for header buttons such as search, user menu, and the light/dark toggle.",
+	"textdomain": "awt",
+	"keywords": [
+		"header",
+		"actions",
+		"global"
+	],
+	"supports": {
+		"html": false,
+		"reusable": false,
+		"className": true,
+		"anchor": false
+	},
+	"attributes": {
+		"ariaLabel": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

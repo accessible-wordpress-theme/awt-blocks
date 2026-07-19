@@ -1,0 +1,110 @@
+<?php
+/**
+ * AWT Select — server-rendered native <select> with Carbon styling.
+ *
+ * @var array $attributes
+ *
+ * @package AWT\Blocks
+ */
+
+declare( strict_types = 1 );
+
+use function AWT\Blocks\Render\html_attrs;
+use function AWT\Blocks\Render\unique_id;
+use function AWT\Blocks\Render\describedby;
+
+$label        = isset( $attributes['label'] ) ? (string) $attributes['label'] : __( 'Select', 'awt' );
+$name         = isset( $attributes['name'] ) ? (string) $attributes['name'] : '';
+$helper_text  = isset( $attributes['helperText'] ) ? (string) $attributes['helperText'] : '';
+$invalid      = ! empty( $attributes['invalid'] );
+$invalid_text = isset( $attributes['invalidText'] ) ? (string) $attributes['invalidText'] : '';
+$disabled     = ! empty( $attributes['disabled'] );
+$required     = ! empty( $attributes['required'] );
+$size         = isset( $attributes['size'] ) ? (string) $attributes['size'] : 'md';
+$hide_label   = ! empty( $attributes['hideLabel'] );
+$placeholder  = isset( $attributes['placeholder'] ) ? (string) $attributes['placeholder'] : __( 'Choose…', 'awt' );
+$options      = isset( $attributes['options'] ) && is_array( $attributes['options'] ) ? $attributes['options'] : array();
+
+$select_id  = unique_id( 'awt-select' );
+$helper_id  = $helper_text !== '' ? $select_id . '-helper' : '';
+$invalid_id = ( $invalid && $invalid_text !== '' ) ? $select_id . '-error' : '';
+
+$ds = function_exists( '\AWT\Theme\DesignSystem\get_active' ) ? \AWT\Theme\DesignSystem\get_active() : null;
+
+// `cds--layout--size-{size}` supplies the `--cds-layout-size-height` CSS
+// variable that drives `.cds--select-input` height (Carbon's --{size}
+// modifier doesn't set it). Without this class every select renders at
+// the default md baseline. Same fix as awt/button and awt/text-input.
+$layout_size            = in_array( $size, array( 'sm', 'md', 'lg' ), true ) ? ' cds--layout--size-' . $size : '';
+$_select_class_fallback = 'cds--select-input cds--select-input--' . $size . ( $invalid ? ' cds--select-input--invalid' : '' ) . $layout_size;
+$select_class           = $ds
+	? $ds->classes_for(
+		'select',
+		array(
+			'element' => 'input',
+			'size'    => $size,
+			'invalid' => $invalid,
+		)
+	)
+	: $_select_class_fallback;
+
+$_label_class_fallback = 'cds--label' . ( $hide_label ? ' cds--visually-hidden' : '' );
+$label_class           = $ds
+	? $ds->classes_for(
+		'select',
+		array(
+			'element'   => 'label',
+			'hideLabel' => $hide_label,
+		)
+	)
+	: $_label_class_fallback;
+
+$_wrapper_class_fallback = 'cds--form-item cds--select' . ( $invalid ? ' cds--select--invalid' : '' );
+$wrapper_class           = $ds
+	? $ds->classes_for( 'select', array( 'invalid' => $invalid ) )
+	: $_wrapper_class_fallback;
+
+$wrapper_attrs = get_block_wrapper_attributes( array( 'class' => $wrapper_class ) );
+
+$select_attrs = html_attrs(
+	array(
+		'id'               => $select_id,
+		'name'             => $name,
+		'class'            => $select_class,
+		'disabled'         => $disabled,
+		'required'         => $required,
+		'aria-invalid'     => $invalid ? 'true' : null,
+		'aria-describedby' => describedby( array( $helper_id, $invalid_id ) ),
+	)
+);
+
+ob_start();
+?>
+<div <?php echo $wrapper_attrs; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- get_block_wrapper_attributes() output is pre-escaped by core. ?>>
+	<label for="<?php echo esc_attr( $select_id ); ?>" class="<?php echo esc_attr( $label_class ); ?>"><?php echo wp_kses_post( $label ); ?></label>
+	<div class="cds--select-input__wrapper">
+		<select<?php echo $select_attrs; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- built by html_attrs(), which escapes every attribute name and value. ?>>
+			<option value="" disabled selected hidden><?php echo esc_html( $placeholder ); ?></option>
+			<?php
+			foreach ( $options as $opt ) :
+				if ( ! is_array( $opt ) ) {
+					continue; }
+				$val       = isset( $opt['value'] ) ? (string) $opt['value'] : '';
+				$opt_label = isset( $opt['label'] ) ? (string) $opt['label'] : $val;
+				?>
+				<option value="<?php echo esc_attr( $val ); ?>"><?php echo esc_html( $opt_label ); ?></option>
+			<?php endforeach; ?>
+		</select>
+		<svg class="cds--select__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true" focusable="false">
+			<path d="M8 11L3 6l.7-.7L8 9.6l4.3-4.3.7.7z"/>
+		</svg>
+	</div>
+	<?php if ( $invalid && $invalid_text !== '' ) : ?>
+		<div id="<?php echo esc_attr( $invalid_id ); ?>" class="cds--form-requirement"><?php echo wp_kses_post( $invalid_text ); ?></div>
+	<?php endif; ?>
+	<?php if ( $helper_text !== '' ) : ?>
+		<div id="<?php echo esc_attr( $helper_id ); ?>" class="cds--form__helper-text"><?php echo wp_kses_post( $helper_text ); ?></div>
+	<?php endif; ?>
+</div>
+<?php
+echo ob_get_clean(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- buffer built above with every dynamic part escaped.

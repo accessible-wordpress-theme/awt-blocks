@@ -1,0 +1,52 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/tile",
+	"carbonStyles": [
+		"tile"
+	],
+	"awt_component": "tile",
+	"title": "Tile",
+	"category": "awt-data-display",
+	"description": "A content box with a heading and body. Variants: default, clickable, selectable, and expandable.",
+	"textdomain": "awt",
+	"keywords": [
+		"tile",
+		"card",
+		"carbon",
+		"radio tile",
+		"expandable"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"variant": {
+			"type": "string",
+			"default": "default"
+		},
+		"href": {
+			"type": "string",
+			"default": ""
+		},
+		"groupName": {
+			"type": "string",
+			"default": ""
+		},
+		"summary": {
+			"type": "string",
+			"default": "Expandable tile"
+		},
+		"defaultOpen": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"editorScript": "file:./index.js",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css"
+}

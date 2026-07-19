@@ -1,0 +1,25 @@
+# --- AWT free repo: awt-blocks ---
+
+# Dependencies
+/node_modules/
+
+# Build output — generated from src/ by `npm run build`.
+# Shipped via .distignore at package time, never committed. Keeping build/ out
+# of git means a removed block (e.g. a block moved to AWT Premium) can never
+# linger as a stale compiled artifact in the public repo.
+/build/
+
+# AWT Premium implementation code must never live in this free repo.
+# It belongs in the awt-premium repo. (See awt-stage-1-spec.md §6 "Build sequencing".)
+/premium-staging/
+**/premium-staging/
+
+# OS / editor cruft
+.DS_Store
+*.log
+npm-debug.log*
+/vendor/
+/test-results/
+/playwright-report/
+.phpunit.result.cache
+.perf-status

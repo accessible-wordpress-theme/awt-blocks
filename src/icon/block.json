@@ -1,0 +1,49 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "awt/icon",
+	"carbonStyles": [],
+	"title": "Icon",
+	"category": "awt-content",
+	"description": "Standalone Carbon icon for decorative graphics, status indicators, or callouts in body content.",
+	"textdomain": "awt",
+	"keywords": [
+		"icon",
+		"svg",
+		"carbon"
+	],
+	"supports": {
+		"html": false,
+		"reusable": true,
+		"className": true,
+		"anchor": true
+	},
+	"attributes": {
+		"iconName": {
+			"type": "string",
+			"default": ""
+		},
+		"size": {
+			"type": "string",
+			"default": "16"
+		},
+		"label": {
+			"type": "string",
+			"default": ""
+		},
+		"decorative": {
+			"type": "boolean",
+			"default": true
+		},
+		"color": {
+			"type": "string",
+			"default": "inherit"
+		},
+		"inline": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

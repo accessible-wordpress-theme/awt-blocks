@@ -1,0 +1,16 @@
+{
+	// Markdown lint config — enforces the structure the release notes
+	// pipeline (Build sequencing 3.2) will parse from CHANGELOG.md.
+	"config": {
+		"default": true,
+		// Long lines are fine in prose; diffs stay readable via soft wrap.
+		"MD013": false,
+		// Inline HTML is needed for badges/details blocks in READMEs.
+		"MD033": false,
+		// Duplicate sibling headings are valid in CHANGELOG (e.g. "Fixed").
+		"MD024": { "siblings_only": true }
+	},
+	"customRules": [ "./scripts/markdownlint-changelog-rule.cjs" ],
+	"globs": [ "**/*.md" ],
+	"ignores": [ "node_modules/**", "vendor/**", "build/**" ]
+}
